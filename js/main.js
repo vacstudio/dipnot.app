@@ -23,8 +23,6 @@ $('.responsive').on('click', function (e) {
 	$('#mobile-menu').slideToggle();
 });
 
-
-
 // menu toggle
 $(".main-menu li a").on('click', function () {
 	if ($(window).width() < 1200) {
@@ -85,7 +83,6 @@ function mainSlider() {
 }
 mainSlider();
 
-
 // services-active
 $('.services-active').slick({
 	dots: true,
@@ -120,7 +117,6 @@ $('.services-active').slick({
 		}
 	]
 });
-
 
 // brand-active
 $('.brand-active').slick({
@@ -231,7 +227,7 @@ $('.count').counterUp({
 $('.popup-image').magnificPopup({
 	type: 'image',
 	gallery: {
-	  enabled: true
+		enabled: true
 	}
 });
 
@@ -271,17 +267,16 @@ $.scrollUp({
 	activeOverlay: false,
 });
 
-
 // isotop
 	$('.grid').imagesLoaded(function () {
 	// init Isotope
 	var $grid = $('.grid').isotope({
-	  itemSelector: '.grid-item',
-	  percentPosition: true,
-	  masonry: {
-		// use outer width of grid-sizer for columnWidth
-		columnWidth: 1
-	  }
+		itemSelector: '.grid-item',
+		percentPosition: true,
+		masonry: {
+			// use outer width of grid-sizer for columnWidth
+			columnWidth: 1
+		}
 	});
 
 	// filter items on button click
@@ -289,8 +284,8 @@ $.scrollUp({
 		var filterValue = $(this).attr('data-filter');
 		$grid.isotope({ filter: filterValue });		
 	});
-
 });
+
 // isotop
 $(".element").each(function() {
     var a = $(this);
@@ -300,6 +295,7 @@ $(".element").each(function() {
         backDelay: 3e3
     })
 }),
+
 //for menu active class
 $('.button-group > button').on('click', function(event) {
 	$(this).siblings('.active').removeClass('active');
@@ -309,34 +305,31 @@ $('.button-group > button').on('click', function(event) {
 
 // WOW active
 new WOW().init();
+  // swiper
     
-   // swiper
-    
-var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-        loop: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-         rotate: 0,
-        stretch: 20,
-        depth: 150,
-        modifier: 1.5,
-        slideShadows: true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
+	var swiper = new Swiper('.swiper-container', {
+		effect: 'coverflow',
+		grabCursor: true,
+		loop: true,
+		centeredSlides: true,
+		slidesPerView: 'auto',
+		coverflowEffect: {
+			rotate: 0,
+			stretch: 20,
+			depth: 150,
+			modifier: 1.5,
+			slideShadows: true,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+		},
+	});
+
 //pricing-tab-switcher
+	$('.pricing-tab-switcher').on('click', function () {
+			$(this).toggleClass('active');
 
-        $('.pricing-tab-switcher').on('click', function () {
-            $(this).toggleClass('active');
-
-            $('.pricing-amount').toggleClass('change-subs-duration');
-        });
-
-
+			$('.pricing-amount').toggleClass('change-subs-duration');
+	});
 
 })(jQuery);
