@@ -1305,6 +1305,7 @@ padding: 10px 30px;
 }
 .choose-btn a .text {
     z-index: 99;
+		margin-top: 15px;
     font-size: 20px;
 }
 
@@ -1315,7 +1316,7 @@ display: block;
     font-weight: 500;
 }
 
-.choose-btn a.g-btn{box-shadow: none;width: 262px;}
+.choose-btn a.g-btn{box-shadow: none;width: 265px;}
 .g-btn::before {
     content: "";
     position: absolute;
@@ -4365,4 +4366,16 @@ height: auto !important;
 	font-size: 14px;
 	opacity: 1;
 }
-.slick-slide{outline: none;}
+.slick-slide {
+	outline: none;
+}
+
+/* Nev Style */
+.logo {
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+}
+.logo img {
+		max-height: 2em;
+}
