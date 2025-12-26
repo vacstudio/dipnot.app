@@ -13,3 +13,7 @@
 .has-background-hero {
   background-image: linear-gradient(92deg, #37525E 20%, #89A3B3 100%);
 }
+
+.menu-list a:hover {
+  color: #04d1b2;
+}
