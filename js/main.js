@@ -24,3 +24,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// Theme Toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const themeToggle = document.getElementById('theme-toggle');
+  if (!themeToggle) return;
+
+  const getTheme = () =>
+    document.documentElement.getAttribute('data-theme') || 'dark';
+
+  const setTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+
+    themeToggle.innerHTML =
+      theme === 'dark'
+        ? '<span class="icon"><i class="fa-solid fa-moon has-text-link"></i></span>'
+        : '<span class="icon"><i class="fa-solid fa-sun has-text-warning"></i></span>';
+  };
+
+  // icon + state sync
+  setTheme(getTheme());
+
+  themeToggle.addEventListener('click', () => {
+    setTheme(getTheme() === 'dark' ? 'light' : 'dark');
+  });
+});
