@@ -32,7 +32,18 @@
           <img src="./img/logo.png" alt="">
           Dipnot
         </a>
-
+        <div class="navbar-item is-hidden-tablet">
+          <button
+            id="theme-toggle"
+            class="button is-text"
+            aria-label="Tema Değiştir"
+            style="text-decoration: none;"
+          >
+            <span class="icon">
+              <i class="fa-solid fa-moon"></i>
+            </span>
+          </button>
+        </div>
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -52,7 +63,7 @@
         </div>
 
         <div class="navbar-end">
-          <div class="navbar-item">
+          <div class="navbar-item is-hidden-mobile">
             <button
               id="theme-toggle"
               class="button is-text"
