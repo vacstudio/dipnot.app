@@ -1,949 +1,414 @@
-<!doctype html>
-<html class="no-js" lang="tr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>DipNotApp - Mobile App Landing Page</title>
-    <meta name="description" content="">
-    <meta name="author" content="Nevcan Uludaş">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shorBtcut icon" type="image/x-icon" href="img/favicon.ico">
-    <!-- Place favicon.ico in the root directory -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dipnot | From divers to divers!</title>
+  <!-- Bulma CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
 
-		<!-- Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/dripicons.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-  </head>
-  <body>
-    <!-- header -->
-    <header class="header-area">      
-      <div id="header-sticky" class="menu-area">
-        <div class="container">
-          <div class="second-menu">
-            <div class="row align-items-center">
-              <div class="col-xl-2 col-lg-2">
-                <div class="logo">
-                  <a href="index.html"><img src="img/logo/logo.svg" alt="logo"></a>
-                </div>
-              </div>
-              <div class="col-xl-8 col-lg-9">
-                <div class="responsive"><i class="icon dripicons-align-right"></i></div>
-                <div class="main-menu text-right text-xl-right">
-                  <nav id="mobile-menu">
-                    <ul>
-                      <li class="has-sub">
-												<a href="#parallax">Anasayfa</a>
-											</li>
-                      <li><a href="#about">Hakkımızda</a></li>
-                      <li><a href="#features">Özellikler</a></li>
-                      <li><a href="#screen">Ekran Görüntüleri</a></li>   
-                      <li class="has-sub"> 
-                        <a href="#screen">Diğer</a>
-                        <ul>													
-													<li><a href="#pricing">Fiyatlandırma</a></li>
-													<li><a href="#testimonios">Referanslar</a></li>
-                          <li><a href="blog.html">Blog</a></li>   
-													<li><a href="blog-details.html">Blog Detayları</a></li> 
-												</ul>
-                      </li>   
-											<li><a href="#blog">Blog</a></li>
-                      <li><a href="#contact">İletişim</a></li>                      
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-              <div class="col-xl-2 text-right d-none d-xl-block">
-                <div class="header-btn second-header-btn">
-                  <a href="#" class="btn">İNDİR</a>
-                </div>
+  <!-- NAVIGATION -->
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-weight-bold" href="https://dipnot.app">Dipnot</a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#">Ana Sayfa</a>
+          <a class="navbar-item" href="#about">Dipnot Nedir?</a>
+          <a class="navbar-item" href="#features">Özellikler</a>
+          <a class="navbar-item" href="#how-it-works">Nasıl Çalışır?</a>
+          <a class="navbar-item" href="#faq">S.S.S.</a>
+          <a class="navbar-item" href="#contact">İletişim</a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-light is-inverted is-outlined">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                  <path d="M13.626 14.3398L1.06573 27.5148C1.20678 28.0153 1.46026 28.4768 1.80677 28.8642C2.15329 29.2515 2.58368 29.5544 3.06504 29.7497C3.54639 29.945 4.06598 30.0275 4.58407 29.991C5.10217 29.9544 5.60506 29.7997 6.05429 29.5388L20.1869 21.4802L13.626 14.3398Z" fill="#EA4335"></path>
+                  <path d="M26.3266 12.0747L20.1812 8.57227L13.2637 14.6122L20.2093 21.4296L26.3079 17.9647C26.8482 17.6832 27.3007 17.26 27.6165 16.7408C27.9322 16.2217 28.0991 15.6265 28.0991 15.0197C28.0991 14.4128 27.9322 13.8176 27.6165 13.2985C27.3007 12.7793 26.8482 12.3561 26.3079 12.0746L26.3266 12.0747Z" fill="#FBBC04"></path>
+                  <path d="M1.01405 2.47266C0.937691 2.75429 0.899657 3.04487 0.900973 3.33661V26.6639C0.901727 26.9556 0.939725 27.2459 1.01405 27.528L14.088 14.6622L1.01405 2.47266Z" fill="#4285F4"></path>
+                  <path d="M13.701 15.0002L20.1869 8.57825L6.09376 0.478127C5.56351 0.166622 4.96043 0.00164849 4.34595 6.51195e-06C2.82105 -0.00296648 1.48043 1.01231 1.06573 2.48447L13.701 15.0002Z" fill="#34A853"></path>
+                </svg>
+                <span class="ml-2">Google Play</span>
+              </a>
+              <a class="button is-light">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+                  <path d="M25.8298 31.7964C24.2144 33.3795 22.4508 33.1295 20.753 32.3796C18.9563 31.6131 17.308 31.5797 15.4125 32.3796C13.0389 33.4128 11.7862 33.1129 10.3687 31.7964C2.32493 23.4141 3.51171 10.649 12.6433 10.1824C14.8685 10.2991 16.418 11.4156 17.7201 11.5156C19.6651 11.1156 21.5277 9.96579 23.6046 10.1158C26.0935 10.3157 27.9726 11.3156 29.2088 13.1154C24.0661 16.2317 25.2858 23.0808 30 24.9972C29.0605 27.4969 27.8407 29.9799 25.8133 31.813L25.8298 31.7964ZM17.5553 10.0824C17.308 6.36624 20.2915 3.29996 23.72 3C24.198 7.29946 19.8629 10.4991 17.5553 10.0824Z" fill="url(#paint0_linear_1290_232)"></path>
+                  <defs>
+                    <linearGradient id="paint0_linear_1290_232" x1="1.93878" y1="-17.9375" x2="31.8437" y2="-18.7584" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#89A3B3"></stop>
+                      <stop offset="1" stop-color="#37525E"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span class="ml-2">App Store</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO BANNER -->
+  <section class="hero is-fullheight-with-navbar" style="background-image: linear-gradient(92deg, #37525E 20%, #89A3B3 100%);">
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column is-align-content-center px-6">
+          <p class="title is-size-1 has-text-white mb-5">Su Altını <span class="has-text-primary">Okumaya</span> Başla!</p>
+          <p class="subtitle has-text-white">Teknikten tarihe, güvenlikten çevreye dalış dünyasını derinlemesine ele alan içerikler...</p>
+          <div class="buttons are-large mt-6 is-flex is-justify-content-center">
+            <button class="button is-light is-outlined">
+              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                <path d="M13.626 14.3398L1.06573 27.5148C1.20678 28.0153 1.46026 28.4768 1.80677 28.8642C2.15329 29.2515 2.58368 29.5544 3.06504 29.7497C3.54639 29.945 4.06598 30.0275 4.58407 29.991C5.10217 29.9544 5.60506 29.7997 6.05429 29.5388L20.1869 21.4802L13.626 14.3398Z" fill="#EA4335"></path>
+                <path d="M26.3266 12.0747L20.1812 8.57227L13.2637 14.6122L20.2093 21.4296L26.3079 17.9647C26.8482 17.6832 27.3007 17.26 27.6165 16.7408C27.9322 16.2217 28.0991 15.6265 28.0991 15.0197C28.0991 14.4128 27.9322 13.8176 27.6165 13.2985C27.3007 12.7793 26.8482 12.3561 26.3079 12.0746L26.3266 12.0747Z" fill="#FBBC04"></path>
+                <path d="M1.01405 2.47266C0.937691 2.75429 0.899657 3.04487 0.900973 3.33661V26.6639C0.901727 26.9556 0.939725 27.2459 1.01405 27.528L14.088 14.6622L1.01405 2.47266Z" fill="#4285F4"></path>
+                <path d="M13.701 15.0002L20.1869 8.57825L6.09376 0.478127C5.56351 0.166622 4.96043 0.00164849 4.34595 6.51195e-06C2.82105 -0.00296648 1.48043 1.01231 1.06573 2.48447L13.701 15.0002Z" fill="#34A853"></path>
+              </svg>
+              <span class="ml-2">Google Play</span>
+            </button>
+            <button class="button is-light">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+                <path d="M25.8298 31.7964C24.2144 33.3795 22.4508 33.1295 20.753 32.3796C18.9563 31.6131 17.308 31.5797 15.4125 32.3796C13.0389 33.4128 11.7862 33.1129 10.3687 31.7964C2.32493 23.4141 3.51171 10.649 12.6433 10.1824C14.8685 10.2991 16.418 11.4156 17.7201 11.5156C19.6651 11.1156 21.5277 9.96579 23.6046 10.1158C26.0935 10.3157 27.9726 11.3156 29.2088 13.1154C24.0661 16.2317 25.2858 23.0808 30 24.9972C29.0605 27.4969 27.8407 29.9799 25.8133 31.813L25.8298 31.7964ZM17.5553 10.0824C17.308 6.36624 20.2915 3.29996 23.72 3C24.198 7.29946 19.8629 10.4991 17.5553 10.0824Z" fill="url(#paint0_linear_1290_232)"></path>
+                <defs>
+                  <linearGradient id="paint0_linear_1290_232" x1="1.93878" y1="-17.9375" x2="31.8437" y2="-18.7584" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#89A3B3"></stop>
+                    <stop offset="1" stop-color="#37525E"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span class="ml-2">App Store</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="column is-align-content-center">
+          <figure class="image">
+            <img src="./img/get_started_-2048x1706.webp" alt="">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN PAGE -->
+  <main class="container">
+
+    <!-- ABOUT APP -->
+    <section id="about" class="section mt-6">
+      <div class="card" style="border-radius: 0 4em 0 4em;">
+        <div class="card-content p-0">
+          <div class="columns">
+            <div class="column is-5 py-0">
+              <figure class="image">
+                <img src="./img/smart-box-labeling_.webp" alt="" style="margin-top: -36px;">
+              </figure>
+            </div>
+            
+            <div class="column is-7 is-flex is-justify-content-center">
+              <div class="is-align-content-center" style="max-width: 600px;">
+                <h2 class="title is-2 mb-4"><span class="has-text-primary">Dipnot</span> Nedir?</h2>
+                <p class="mt-3">Dipnot, dalış ve su altı dünyasına ilgi duyan herkes için hazırlanmış bağımsız bir içerik platformudur. Uygulama içinde; dalış kültürü, güvenlik, ekipman, çevre, tarih ve güncel konular üzerine özenle yazılmış makalelere ulaşabilirsiniz.</p>
+                <p class="mt-3">Dipnot, hızlı tüketilen içerikler yerine kalıcı ve referans alınabilir bilgiler sunmayı amaçlar. Yeni başlayanlardan deneyimli dalıcılara kadar herkes için, okunabilir, sade ve güvenilir bir kaynak oluşturur.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <!-- header-end -->
-    <!-- main-area -->
-    <main>
-      <!-- slider-area -->
-      <section id="parallax" class="slider-area slider-bg2 second-slider-bg d-flex fix" style="background-image: url(img/bg/pink-header-bg.png); background-position:right 0; background-repeat: no-repeat; background-size: 65%;">
-        
-        <div class="slider-shape ss-one layer" data-depth="0.10"><img src="img/shape/header-sape.png" alt="shape"></div>
+    </section>
 
-        <div class="slider-shape ss-eight layer" data-depth="0.50"></div>
+    <!-- FEATURES -->
+    <section id="features" class="section my-6">
+      <div class="has-text-centered mb-6">
+        <h2 class="title is-2 mb-4">Özellikler</h2>
+        <p class="subtitle mb-6">Dalış odaklı, sade ve nitelikli bir içerik deneyimi</p>
+      </div>
 
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="slider-content second-slider-content left-center">     
-                <ul class="small-title mb-30">
-                  <li>New</li>
-                  <li>Best Mobile App</li>                      
-                </ul>
-                <h2 data-animation="fadeInUp" data-delay=".4s">Best Mobile App <span>Showcase</span></h2>
-                <p data-animation="fadeInUp" data-delay=".6s">Aenean dictum odio dapibus turpis dapibus vestibulum. Mauris quis massa nisi. Nullam porta lorem at volutpat euismod. Proin in ex nunc.</p>
-                <div class="slider-btn mt-30 mb-30">
-                  <a href="#" class="btn ss-btn" data-animation="fadeInUp" data-delay=".8s">Read More</a>
-                </div>
-              </div>
-            </div>
-              <div class="col-lg-6">
-                <img src="img/bg/mobile.png" alt="shape" class="s-img">
-            </div>
+      <div class="columns is-multiline">
+        <div class="column is-3">
+          <div class="card has-text-centered p-5">
+            <span class="icon is-large mb-4">
+              <i class="fa-solid fa-feather-pointed fa-3x"></i>
+            </span>
+            <h3 class="title is-5">Küratörlü İçerikler</h3>
+            <p>Deneyimli dalıcılar tarafından hazırlanmış nitelikli yazılar.</p>
           </div>
         </div>
-      </section>
-      <!-- slider-area-end -->
 
-			<!-- services-area -->
-      <section id="about" class="services-area services-bg pt-25 pb-20" style="background-image: url(img/shape/header-sape2.png); background-position: right top; background-size: auto;background-repeat: no-repeat;">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-7 col-lg-10">
-              <div class="section-title text-center pl-40 pr-40 mb-45">
-                <h2>Our Features</h2>
-                <p>Quisque posuere mollis ipsum et molestie. Fusce cursus, risus vel scelerisque porttitor, leo quam vulputate nibh, sit amet blandit erat magna.</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-12 mb-30">
-              <div class="s-single-services active text-center">
-                <div class="services-icon">
-                  <img src="img/icon/f-icon1.png"/>
-                </div>
-                <div class="second-services-content">
-                  <h5>Perfect UI Design</h5>
-                  <p>Praesent ac vehicula sapien. Sed sollicitudin molestie consequat. Ut vitae ante ut mi vehicula vulputate.</p>
-                  <a href="#"><span>1</span></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-12 mb-30">
-              <div class="s-single-services text-center">
-                <div class="services-icon">
-                  <img src="img/icon/f-icon3.png"/>
-                </div>
-                <div class="second-services-content">
-                  <h5>Great CSS Animation</h5>
-                  <p>Praesent ac vehicula sapien. Sed sollicitudin molestie consequat. Ut vitae ante ut mi vehicula vulputate.</p>
-                  <a href="#"><span>2</span></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-12 mb-30">
-              <div class="s-single-services text-center">
-                <div class="services-icon">
-                  <img src="img/icon/f-icon2.png"/>
-                </div>
-                <div class="second-services-content">
-                  <h5>Fully Secured</h5>
-									<p>Praesent ac vehicula sapien. Sed sollicitudin molestie consequat. Ut vitae ante ut mi vehicula vulputate.</p>
-                  <a href="#"><span>3</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </section>
-      <!-- services-area-end -->
-			<!-- choose-area -->
-      <section class="choose-area pt-100 pb-60 p-relative" style="background-image: url(img/shape/header-sape3.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">
-        <div class="chosse-img" style="background-image:url(img/bg/easy-m-bg.png)"></div>
-        <div class="chosse-img2"><img src="img/bg/mobile2.png" alt="mobile"/></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-5">
-            </div>
-            <div class="col-xl-7">
-              <div class="choose-wrap">
-                <div class="section-title w-title left-align mb-25">
-                  <h2>Dalış Dünyasından Haberdar Olmanın En Kolay Yolu</h2>
-                </div>
-                <div class="choose-content">
-                  <p>DipNotApp, dalışla ilgili haberleri, makaleleri ve güncel gelişmeleri tek bir yerde topluyor. Farklı kategorilerdeki içeriklerle hem hobinizi hem de bilginizi geliştirebilirsiniz.</p>
-                  <p>Haberlerden ve yeni makalelerden anında haberdar olmak için uygulamayı hemen indirin. Mobil cihazınızdan giriş yaparak, dalış dünyasındaki yenilikleri kaçırmayın ve topluluğun bir parçası olun!</p>
-                  <div class="choose-btn mt-30">
-                    <a href="#">
-                      <span class="icon">
-                        <img src="img/icon/apple-icon.png" alt="apple-icon">
-                      </span> 
-                      <span class="text">
-                        <strong>APP STORE</strong>
-                      </span>
-                    </a>
-                    <a href="#" class="g-btn">
-                      <span class="icon">
-                        <img src="img/icon/g-play-icon.png" alt="apple-icon">
-                      </span> 
-                      <span class="text">
-                        <strong>GOOGLE PLAY</strong>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="column is-3">
+          <div class="card has-text-centered p-5">
+            <span class="icon is-large mb-4">
+              <i class="fa-solid fa-layer-group fa-3x"></i>
+            </span>
+            <h3 class="title is-5">Kategoriler</h3>
+            <p>Farklı başlıklar altında düzenlenmiş içerikler.</p>
           </div>
         </div>
-      </section>
-      <!-- choose-area-end -->
 
-      <!-- how-app-work -->
-      <section id="features" class="app-work pt-70 pb-100 p-relative" style="background-image: url(img/shape/header-sape4.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">      
-        <div class="container">
-          <div class="row align-items-center ">
-
-            <div class="col-xl-6">
-              <div class="choose-wrap">
-                <div class="section-title w-title left-align mb-15">
-                  <h2>DipNot App Nasıl Çalışır?</h2>
-                </div>
-                <div class="app-work-content mt-20">
-                  <ul>
-                    <li>
-                      <div class="icon"><img src="img/icon/apw-Icon1.png"></div> 
-                      <div class="text">
-                        <h4>Profil Oluştur</h4>
-                        <p>Aliquam varius ligula nec leo tempus porta. Vestibulum suscipit leo at nunc imperdiet, quis lacinia nisi euismod.</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="icon"><img src="img/icon/apw-Icon2.png"></div> 
-                      <div class="text">
-                        <h4>Ücretsiz İndir</h4>
-                        <p>Aliquam varius ligula nec leo tempus porta. Vestibulum suscipit leo at nunc imperdiet, quis lacinia nisi euismod.</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="icon"><img src="img/icon/apw-Icon3.png"></div> 
-                      <div class="text">
-                        <h4>Uygulamayı Keyifle Kullanın</h4>
-                        <p>Aliquam varius ligula nec leo tempus porta. Vestibulum suscipit leo at nunc imperdiet, quis lacinia nisi euismod.</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-6">
-              <img src="img/bg/app-work-img.png" alt="app-work-img" class="img">
-            </div>
+        <div class="column is-3">
+          <div class="card has-text-centered p-5">
+            <span class="icon is-large mb-4">
+              <i class="fa-solid fa-sliders fa-3x"></i>
+            </span>
+            <h3 class="title is-5">Kişisel Deneyim</h3>
+            <p>Profiline göre şekillenen okuma akışı.</p>
           </div>
         </div>
-      </section>
-      <!-- how-app-work -->
 
-      <!-- video-area -->
-      <section class="video-area pt-100 pb-100 p-relative">        
-        <div class="video-img2">
-          
-          <img src="img/bg/video-img.png" alt="mobile"/>
-        
-          <a href="https://www.youtube.com/watch?v=7e90gBu4pas" class="popup-video"><img src="img/bg/play-btn.png" alt="play-btn.png"></a>
-        </div>
-        <div class="video-img3">
-          <img src="img/shape/header-sape5.png" alt="header-sape4">
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-6">
-            </div>
-            <div class="col-xl-6">
-              <div class="video-wrap">
-                <div class="section-title w-title left-align mb-25">
-                  <h2>Build The App That Everyonee Love</h2>
-                </div>
-                <div class="video-content">
-                  <p>Praesent fermentum nisl at ipsum facilisis viverra. Ut elementum accumsan finibus. Cras placerat lacinia mi, ac dictum ante. Donec libero enim, tincidunt sit amet venenatis id, maximus eu quam. </p>
-                  <ul>
-                    <li>
-                      <div class="icon"><img src="img/icon/vs-icon.png"></div> 
-                      <div class="text">Pellentesque placerat, nisi congue vehicula efficitur.
-                      </div>
-                    </li>
-                    <li>
-                      <div class="icon"><img src="img/icon/vs-icon.png"></div> 
-                      <div class="text">Pellentesque placerat, nisi congue vehicula efficitur.
-                      </div>
-                    </li>
-                    <li>
-                      <div class="icon"><img src="img/icon/vs-icon.png"></div> 
-                      <div class="text">Suspendisse vitae varius diam, a vulputate urna.
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- video-area-end -->
-
-      <!-- screen-area -->
-      <section id="screen" class="screen-area services-bg services-two pt-100 pb-70"  style="background-image: url(img/shape/header-sape4.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-8 col-lg-10">
-              <div class="section-title text-center pl-40 pr-40 mb-50">                 
-                <h2>Our App ScreenShots</h2>
-                <p>Quisque posuere mollis ipsum et molestie. Fusce cursus, risus vel scelerisque porttitor, leo quam vulputate nibh, sit amet blandit erat magna.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <!-- Swiper -->
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/gallery/screen-img01.png" alt="slide 1"></div>
-                <div class="swiper-slide"><img src="img/gallery/screen-img02.png" alt="slide 1"></div>
-                <div class="swiper-slide"><img src="img/gallery/screen-img03.png" alt="slide 1"></div>
-                <div class="swiper-slide"><img src="img/gallery/screen-img04.png" alt="slide 1"></div>
-                <div class="swiper-slide"><img src="img/gallery/screen-img05.png" alt="slide 1"></div>
-              </div>
-
-              <!-- Add Pagination -->
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-      <!-- screen-area-end -->   
-      
-      <!-- faq-area -->
-      <section class="faq-area pb-100" style="background-image: url(img/shape/header-sape6.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">
-        <div class="container">
-          <div class="row align-items-end">            
-            <div class="col-lg-6">
-              <div class="faq-img text-right">
-                <img src="img/icon/logos-icons.png" alt="img" class="img">
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="section-title left-align mb-50">                 
-                <h2>Designed & Worked By The Latest Partners</h2>
-                <p>Duis non aliquet tellus, in mollis leo. Phasellus quis posuere dui. Nulla mauris purus, mattis eget sagittis at, accumsan sed leo.</p>
-              </div>
-              <div class="faq-wrap">
-                <div class="accordion" id="accordionExample">
-                  <div class="card">
-                    <div class="card-header" id="headingThree">
-                      <h2 class="mb-0">
-                        <button class="faq-btn" type="button" data-toggle="collapse"
-                          data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                          Aliquam varius ligula nec leo tempus porta.
-                        </button>
-                      </h2>
-                    </div>
-                    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
-                      data-parent="#accordionExample">
-                      <div class="card-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingOne">
-                      <h2 class="mb-0">
-                        <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Suspendisse vitae varius diam, a vulputate urna.</button>
-                      </h2>
-                    </div>
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                      <div class="card-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingTwo">
-                      <h2 class="mb-0">
-                        <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Aliquam aliquet purus eget lacus pretium.</button>
-                      </h2>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                      <div class="card-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- faq-aread-end -->
-      
-      <!-- newslater-area -->
-      <section class="newslater-area pt-90 pb-100" style="background-image: url(img/bg/subscribe-bg.png);background-size: cover;" >
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-8 col-lg-10">
-              <div class="section-title text-center pl-40 pr-40 mb-50">
-                <h2>Subscreibe For New Features</h2>
-                <p>Quisque posuere mollis ipsum et molestie. Fusce cursus, risus vel scelerisque porttitor, leo quam vulputate nibh, sit amet blandit erat magna.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">      
-            <div class="col-xl-6 col-lg-10">
-              <form name="ajax-form" id="contact-form4" action="#" method="post" class="contact-form newslater">
-                <div class="form-group">
-                  <input class="form-control" id="email2" name="email" type="email" placeholder="Email Address..." value="" required=""> 
-                  <button type="submit" class="btn btn-custom" id="send2">Subscribe Now</button>
-                </div>
-                <!-- /Form-email -->	
-              </form>
-            </div>
-            
-          </div>
-        </div>
-      </section>
-      <!-- newslater-aread-end -->
-      
-			<!-- pricing-area -->
-      <section id="pricing" class="pricing-area pt-100 pb-50" style="background-image: url(img/shape/header-sape7.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-7 col-lg-8">
-              <div class="section-title text-center mb-50">   
-                <h2>Our Pricing Plans</h2>
-                <p>Quisque posuere mollis ipsum et molestie. Fusce cursus, risus vel scelerisque porttitor, leo quam vulputate nibh, sit amet blandit erat magna.</p>
-              </div>
-              
-              <nav class="pricing-tab mb-60">
-                <span class="monthly_tab_title">Monthly</span>
-                <span class="pricing-tab-switcher"></span>
-                <span class="annual_tab_title">Annual</span>
-              </nav>
-            </div>
-
-          </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-6">
-              <div class="pricing-box text-center mb-60">
-                <div class="pricing-head">                  
-                  <h4>Beginner</h4>
-                  <div class="pricing-amount">
-                    <div class="annual_price">
-                      <sup><span class="currency">$</span></sup>
-                      <span class="price"> 95 </span>
-                      <span class="subscription"> / Annual </span>
-                    </div>
-
-                    <div class="monthly_price">
-                      <sup><span class="currency">$</span></sup>
-                      <span class="price"> 15 </span>
-                      <span class="subscription"> / Monthly </span>
-                    </div>
-                  </div>
-                  <h5>I have a dream</h5>
-                </div>
-                
-                <div class="pricing-body mb-40 text-left">
-                  
-									<ul>
-										<li>1000+ projets</li>
-										<li>No transaction fees</li>
-										<li>Unlimited Storage</li>
-										<li>5 Download</li>
-									</ul>
-                </div>
-                <div class="pricing-btn">
-                  <a href="#" class="btn">Start Now</a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-6">
-              <div class="pricing-box active text-center mb-60">
-                <div class="poppuler">
-                  <span class="btn">Poppuler</span>
-                </div>
-                <div class="pricing-head">                  
-                  <h4>Starter</h4>
-                  <div class="pricing-amount">
-                    <div class="annual_price">
-                      <sup><span class="currency">$</span></sup>
-                      <span class="price">  78 </span>
-                      <span class="subscription"> /Annual </span>
-                    </div>
-                    <div class="monthly_price">
-                      <sup><span class="currency">$</span></sup>
-                      <span class="price"> 15 </span>
-                      <span class="subscription"> /Monthly </span>
-                    </div>
-                  </div>
-                  <h5>I have a dream</h5>
-                </div>
-
-                <div class="pricing-body mb-40 text-left">
-                  
-									<ul>
-										<li>1000+ projets</li>
-										<li>No transaction fees</li>
-										<li>Unlimited Storage</li>
-										<li>5 Download</li>
-									</ul>
-                </div>
-                <div class="pricing-btn">
-                  <a href="#" class="btn">Start Now</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="pricing-box active text-center mb-60">         
-                <div class="pricing-head">                  
-                  <h4>Professionl</h4>
-                  <div class="pricing-amount">
-                    <div class="annual_price">
-                      <sup><span class="currency">$</span></sup>
-                      <span class="price">  90 </span>
-                      <span class="subscription"> / Annual </span>
-                    </div>
-                    <div class="monthly_price">
-                      <sup><span class="currency">$</span></sup>
-                      <span class="price"> 18 </span>
-                      <span class="subscription"> / Monthly </span>
-                    </div>
-                  </div>
-                  <h5>I have a dream</h5>
-                </div>
-                
-                  <div class="pricing-body mb-40 text-left">
-                  
-									<ul>
-										<li>1000+ projets</li>
-										<li>No transaction fees</li>
-										<li>Unlimited Storage</li>
-										<li>5 Download</li>
-									</ul>
-                </div>
-                <div class="pricing-btn">
-                  <a href="#" class="btn">Start Now</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="pricing-box active text-center mb-60">
-                <div class="pricing-head">                   
-                  <h4>Power Plan</h4>
-                  <div class="pricing-amount">
-                    <div class="annual_price">
-                      <sup><span class="currency">$</span></sup>
-                      <span class="price"> 120 </span>
-                      <span class="subscription"> / Annual </span>
-                    </div>
-                    <div class="monthly_price">
-                      <sup><span class="currency">$</span></sup>
-                      <span class="price"> 25 </span>
-                      <span class="subscription"> / Monthly </span>
-                    </div>
-                  </div>
-                  <h5>I have a dream</h5>
-                </div>
-                <div class="pricing-body mb-40 text-left">
-                  
-									<ul>
-										<li>1000+ projets</li>
-										<li>No transaction fees</li>
-										<li>Unlimited Storage</li>
-										<li>5 Download</li>
-									</ul>
-                </div>
-                <div class="pricing-btn">
-                  <a href="#" class="btn">Start Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- pricing-area-end -->
-			
-      <!-- testimonial-area -->
-      <section id="testimonios" class="testimonial-area testimonial-p  pt-100 pb-70" style="background-image:url(img/bg/client-bg.png); background-repeat: no-repeat; background-position: right center;">
-        <div class="container">
-          <div class="row">  
-            <div class="col-lg-6">
-              <div class="section-title center-align">                
-                <h2>What Our Clients Say’s</h2>
-                <p>Quisque posuere mollis ipsum et molestie. Fusce cursus, risus vel scelerisque porttitor, leo quam vulputate nibh, sit amet blandit erat magna.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-12">
-              <div class="testimonial-active">
-                <div class="col-xl-4">
-                  <div class="single-testimonial">
-                    <div class="testi-author text-left">
-                      <img src="img/testimonial/testi_avatar.png" alt="img">
-                      <div class="ta-info">
-                        <h6>Mr Jone Dose</h6>
-                        <span>Author</span>
-                      </div>
-                    </div>
-                    <div class="qutation"><img src="img/bg/qutation.png" alt="qutation.png"></div>
-                    
-                    <p>Praesent fermentum nisl at ipsum fcilisis viverra elementum accumsan finibus. Cras placerat lacinia mitincidunt sit amet venenatis.</p>
-                    
-                  </div>
-                </div>
-
-                <div class="col-xl-4">
-                  <div class="single-testimonial">
-                    <div class="testi-author text-left">
-                      <img src="img/testimonial/testi_avatar2.png" alt="img">
-                      <div class="ta-info">
-                        <h6>Mr Jone Dose</h6>
-                        <span>Author</span>
-                      </div>
-                    </div>
-
-                    <div class="qutation"><img src="img/bg/qutation.png" alt="qutation.png"></div>
-                    <p>Praesent fermentum nisl at ipsum fcilisis viverra elementum accumsan finibus. Cras placerat lacinia mitincidunt sit amet venenatis.</p>
-                  </div>
-                </div>
-                <div class="col-xl-4">
-                  <div class="single-testimonial">
-                    <div class="testi-author text-left">
-                      <img src="img/testimonial/testi_avatar3.png" alt="img">
-                      <div class="ta-info">
-                        <h6>Mr Jone Dose</h6>
-                        <span>Web Developer</span>
-                      </div>
-                    </div>
-
-                    <div class="qutation">
-                      <img src="img/bg/qutation.png" alt="qutation.png">
-                    </div>
-                    <p>Praesent fermentum nisl at ipsum fcilisis viverra elementum accumsan finibus. Cras placerat lacinia mitincidunt sit amet venenatis.</p>
-
-                  </div>
-                </div>
-                <div class="col-xl-4">
-                  <div class="single-testimonial">
-                    <div class="testi-author text-left">
-                      <img src="img/testimonial/testi_avatar.png" alt="img">
-                      <div class="ta-info">
-                        <h6>Mr Jone Dose</h6>
-                        <span>Web Developer</span>
-                      </div>
-                    </div>
-                    <div class="qutation"><img src="img/bg/qutation.png" alt="qutation.png"></div>
-                    <p>Praesent fermentum nisl at ipsum fcilisis viverra elementum accumsan finibus. Cras placerat lacinia mitincidunt sit amet venenatis.</p>
-                    
-                  </div>
-                </div>
-                 <div class="col-xl-4">
-                  <div class="single-testimonial">
-                    <div class="testi-author text-left">
-                      <img src="img/testimonial/testi_avatar2.png" alt="img">
-                      <div class="ta-info">
-                        <h6>Mr Jone Dose</h6>
-                        <span>Web Developer</span>
-                      </div>
-                    </div>
-                    <div class="qutation"><img src="img/bg/qutation.png" alt="qutation.png"></div>
-                    <p>Praesent fermentum nisl at ipsum fcilisis viverra elementum accumsan finibus. Cras placerat lacinia mitincidunt sit amet venenatis.</p>
-                    
-                  </div>
-                </div>
-                
-                
-              </div>
-            </div>
-						
-          </div>
-        </div>
-      </section>
-      <!-- testimonial-area-end -->
-       
-       
-      <!-- blog-area -->
-      <section id="blog" class="blog-area p-relative pt-70" style="background-image: url(img/shape/header-sape8.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-7 col-lg-10">
-              <div class="section-title text-center mb-50">                 
-                <h2>Our Latest Blog & News</h2>
-                <p>Quisque posuere mollis ipsum et molestie. Fusce cursus, risus vel scelerisque porttitor, leo quam vulputate nibh, sit amet blandit erat magna.</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-12">
-              <div class="single-post mb-30">
-                <div class="blog-thumb">
-                  <a href="blog-details.html"><img src="img/blog/inner_b1.jpg" alt="img"></a>
-                </div>
-                <div class="blog-content">
-                  <div class="b-meta mb-40">
-                    <ul>                       
-                      <li><a href="#">20 jan 2019</a></li>                      
-                    </ul>
-                  </div>
-                  <h4><a href="blog-details.html">Making Distribut Product Team
-                  Work More With Monday</a></h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisi
-                  cing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <div class="admin">
-                      <ul>
-                        <li><img src="img/blog/admin-img.png" alt="test"></li>
-                        <li><h6>Jhon Abraham</h6> Author</li>
-                      </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-               <div class="single-post mb-30">
-                <div class="blog-thumb">
-                  <a href="blog-details.html"><img src="img/blog/inner_b2.jpg" alt="img"></a>
-                </div>
-                <div class="blog-content">
-                  <div class="b-meta mb-40">
-                    <ul>                       
-                      <li><a href="#">20 jan 2019</a></li>                     
-                    </ul>
-                  </div>
-                  <h4><a href="blog-details.html">Monthly Web Development Upto Cost Of JavaScript Ethics</a></h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisi
-                  cing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <div class="admin">
-                      <ul>
-                         <li><img src="img/blog/admin-img.png" alt="test"></li>
-                        <li><h6>Jhon Abraham</h6> Author</li>
-                      </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-               <div class="single-post mb-30">
-                <div class="blog-thumb">
-                  <a href="blog-details.html"><img src="img/blog/inner_b3.jpg" alt="img"></a>
-                </div>
-                <div class="blog-content">
-                  <div class="b-meta mb-40">
-                    <ul>                       
-                      <li><a href="#">20 jan 2019</a></li>
-                    </ul>
-                  </div>
-                  <h4><a href="blog-details.html">User Experience Psychology And Performance Smashing</a></h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisi
-                  cing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                   <div class="admin">
-                      <ul>
-                         <li><img src="img/blog/admin-img.png" alt="test"></li>
-                        <li><h6>Jhon Abraham</h6> Author</li>
-                      </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- blog-area-end -->
-			
-      <!-- contact-area -->
-      <section id="contact" class="contact-area contact-bg  pt-50 pb-100 p-relative fix"  style="background-image: url(img/shape/header-sape8.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">
-        <div class="container">
-       
-					<div class="row">
-						<div class="col-lg-6">
-              <div class="contact-img2">
-                <img src="img/bg/illustration.png" alt="test">
-              </div>						
-						</div>
-						<div class="col-lg-6">
-              <div class="section-title mb-40">                
-                <h2>Get In Tuch</h2>
-                  <p>Quisque posuere mollis ipsum et molestie. Fusce cursus, risus vel scelerisque porttitor, leo quam vulputate nibh, sit amet blandit erat magna.</p>
-              </div>
-						<form action="#" class="contact-form">
-							<div class="row">
-              <div class="col-lg-12">
-                <div class="contact-field p-relative c-name mb-20">                  
-                  <input type="text" placeholder="Name">
-                </div>                 
-              </div>
-							 <div class="col-lg-12">          
-                <div class="contact-field p-relative c-email mb-20">                  
-                  <input type="text" placeholder="Email">
-                </div>                
-              </div>
-							 <div class="col-lg-12">            
-                <div class="contact-field p-relative c-subject mb-20">                   
-                  <input type="text" placeholder="Phone">
-                </div>
-              </div>
-							
-              <div class="col-lg-12">
-                <div class="contact-field p-relative c-message mb-45">                  
-                  <textarea name="message" id="message" cols="10" rows="10" placeholder="Write comments"></textarea>
-                </div>
-                <button class="btn">Send Message</button>
-              </div>
-              </div>
-            
-          </form>
-						</div>
-					</div>
-          
-        </div>
-      </section>
-      <!-- contact-area-end -->
-    </main>
-    <!-- main-area-end -->
-    <!-- footer -->
-    <footer class="footer-bg footer-p pt-60" style="background-image: url(img/bg/f-bg.png); background-position: center top; background-size: auto;background-repeat: no-repeat;">      
-  
-      <div class="footer-top">
-        <div class="container">
-          <div class="row justify-content-between">
-            <div class="col-xl-3 col-lg-3 col-sm-6">
-              <div class="footer-widget mb-30">
-                <div class="logo mt-15 mb-15">
-                  <img src="img/logo/dipnotapp_icon_w.png" alt="logo"> DipNot.App
-                </div>
-                <div class="footer-text mb-20">
-                  <p>Bizi sosyal ağlarda takip edin ve dalış dünyasındaki en güncel haberlerden, makalelerden ve etkinliklerden anında haberdar olun!</p>
-                </div>
-                <div class="footer-social">
-                  <a href="https://www.instagram.com/dipnot.app" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                  <a href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a>
-                </div>
-              </div>
-            </div>
-						<div class="col-xl-2 col-lg-3 col-sm-6">
-              <div class="footer-widget mb-30">
-                <div class="f-widget-title">
-                  <h5>Company News</h5>
-                </div>
-                <div class="footer-link">
-                  <ul>                    
-                    <li><a href="#">Partners</a></li>
-										<li><a href="#">About Us</a></li>
-                    <li><a href="#">Career</a></li>
-                    <li><a href="#">Reviews</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>                    
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-2 col-lg-3 col-sm-6">
-              <div class="footer-widget mb-30">
-                <div class="f-widget-title">
-                  <h5>Useful Links</h5>
-                </div>
-                <div class="footer-link">
-                  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Our Team</a></li>                     
-                  </ul>
-                </div>
-              </div>
-            </div>            
-            <div class="col-xl-3 col-lg-3 col-sm-6">
-              <div class="footer-widget mb-30">
-                <div class="f-widget-title">
-                  <h5>Contact Us</h5>
-                </div>
-                <div class="footer-link">
-                  <div class="f-contact">
-                  <ul>
-                  <li>
-                    <i class="icon dripicons-phone"></i>
-                    <span>+90 (212) 669 9277</span>
-                  </li>
-                  <li>
-                    <i class="icon dripicons-mail"></i>
-                    <span>
-                      <a href="mailto:info@dipnot.app">info@dipnot.app</a>
-                      <br>
-                      <a href="mailto:help@dipnot.app">help@dipnot.app</a>
-                    </span>
-                  </li>
-                  <li>
-                    <i class="fal fa-map-marker-alt"></i>
-                    <span>
-                      1. Kısım Mh. Vali Recep Yazıcıoğlu Cd. Doğa Parkı Evleri BC Blok No:15/13 Bahçeşehir, İst.
-                    </span>
-                  </li>
-                </ul>
-                  
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
+        <div class="column is-3">
+          <div class="card has-text-centered p-5">
+            <span class="icon is-large mb-4">
+              <i class="fa-solid fa-minimize fa-3x"></i>
+            </span>
+            <h3 class="title is-5">Sade Arayüz</h3>
+            <p>Dikkat dağıtmayan, odaklı tasarım.</p>
           </div>
         </div>
       </div>
-      <div class="copyright-wrap text-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="copyright-text">
-                <p>&copy; 2025 @ DipNotApp.  All design VAC Studio.</p>
+    </section>
+
+    <!-- HOW IT WORKS? -->
+    <section id="how-it-works" class="section">
+      <div class="columns is-multiline">
+        <div class="column is-12 has-text-centered">
+          <h2 class="title is-2 mb-6">Nasıl Çalışır?</h2>
+        </div>
+
+        <div class="column has-text-centered">
+          <div class="card p-4 has-background-warning has-text-dark">
+            <div class="card-header is-flex-direction-column" style="box-shadow: none;">
+              <div class="card-header-icon">
+                <div class="icon is-large mb-5">
+                  <i class="fa-solid fa-download fa-3x"></i>
+                </div>
               </div>
+
+              <div class="car-header-title">
+                <h3 class="is-size-3">Ücretsiz İndir</h3>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <p>App Store veya Google Play üzerinden Dipnot’u ücretsiz indir.</p>
             </div>
           </div>
         </div>
+
+        <div class="column has-text-centered">
+          <div class="card p-4 has-background-primary has-text-dark">
+            <div class="card-header is-flex-direction-column" style="box-shadow: none;">
+              <div class="card-header-icon">
+                <div class="icon is-large mb-5">
+                  <i class="fa-solid fa-user fa-3x"></i>
+                </div>
+              </div>
+
+              <div class="car-header-title">
+                <h3 class="is-size-3">Profil Oluştur</h3>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <p>İlgi alanlarını seç, okuma deneyimini kişiselleştir.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column has-text-centered">
+          <div class="card p-4 has-background-link has-text-light">
+            <div class="card-header is-flex-direction-column" style="box-shadow: none;">
+              <div class="card-header-icon">
+                <div class="icon is-large mb-5">
+                  <i class="fa-solid fa-book-open fa-3x"></i>
+                </div>
+              </div>
+
+              <div class="car-header-title">
+                <h3 class="is-size-3">İçerikleri Keşfet</h3>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <p>Dalış ve su altı dünyasına dair farklı başlıklar altında hazırlanmış makalelere kolayca ulaş.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </footer>
-    <!-- footer-end -->
+    </section>
 
+    <hr class="my-6">
 
-		<!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/one-page-nav-min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/paroller.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/js_isotope.pkgd.min.js"></script>
-    <script src="js/imagesloaded.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/typed.js"></script>
-    <script src="js/parallax-scroll.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/element-in-view.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- F.A.Q. -->
+    <section id="faq" class="section">
+      <div class="columns">
+        <div class="column is-5 mt-5">
+          <figure class="image">
+            <img src="./img/frequently_asked_questions-1800x2048.webp" alt="">
+          </figure>
+        </div>
+
+        <div class="column is-7">
+          <h2 class="title is-2 mb-6">Sıkça Sorulan Sorular</h2>
+
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">Card header</p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+
+            <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nam ea, blanditiis tempora dolorum animi itaque dolor tempore, vel sapiente a architecto vitae facere odio ab soluta autem unde maxime?</div>
+          </div>
+
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">Card header</p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+
+            <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nam ea, blanditiis tempora dolorum animi itaque dolor tempore, vel sapiente a architecto vitae facere odio ab soluta autem unde maxime?</div>
+          </div>
+
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">Card header</p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+
+            <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nam ea, blanditiis tempora dolorum animi itaque dolor tempore, vel sapiente a architecto vitae facere odio ab soluta autem unde maxime?</div>
+          </div>
+
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">Card header</p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+
+            <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nam ea, blanditiis tempora dolorum animi itaque dolor tempore, vel sapiente a architecto vitae facere odio ab soluta autem unde maxime?</div>
+          </div>
+
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">Card header</p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+
+            <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nam ea, blanditiis tempora dolorum animi itaque dolor tempore, vel sapiente a architecto vitae facere odio ab soluta autem unde maxime?</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <div class="hero m-6" style="background-image: linear-gradient(92deg, #37525E 20%, #89A3B3 100%); border-radius: 1em;">
+      <div class="hero-body has-text-centered">
+        <p class="title is-size-1 has-text-white mb-4">Kullanmaya <span class="has-text-primary">ücretsiz</span> başla!</p>
+        <p class="subtitle has-text-white">Teknikten tarihe, güvenlikten çevreye dalış dünyasını derinlemesine ele alan içerikler...</p>
+        <div class="buttons are-large mt-6 is-flex is-justify-content-center">
+          <button class="button is-light is-outlined">
+            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+              <path d="M13.626 14.3398L1.06573 27.5148C1.20678 28.0153 1.46026 28.4768 1.80677 28.8642C2.15329 29.2515 2.58368 29.5544 3.06504 29.7497C3.54639 29.945 4.06598 30.0275 4.58407 29.991C5.10217 29.9544 5.60506 29.7997 6.05429 29.5388L20.1869 21.4802L13.626 14.3398Z" fill="#EA4335"></path>
+              <path d="M26.3266 12.0747L20.1812 8.57227L13.2637 14.6122L20.2093 21.4296L26.3079 17.9647C26.8482 17.6832 27.3007 17.26 27.6165 16.7408C27.9322 16.2217 28.0991 15.6265 28.0991 15.0197C28.0991 14.4128 27.9322 13.8176 27.6165 13.2985C27.3007 12.7793 26.8482 12.3561 26.3079 12.0746L26.3266 12.0747Z" fill="#FBBC04"></path>
+              <path d="M1.01405 2.47266C0.937691 2.75429 0.899657 3.04487 0.900973 3.33661V26.6639C0.901727 26.9556 0.939725 27.2459 1.01405 27.528L14.088 14.6622L1.01405 2.47266Z" fill="#4285F4"></path>
+              <path d="M13.701 15.0002L20.1869 8.57825L6.09376 0.478127C5.56351 0.166622 4.96043 0.00164849 4.34595 6.51195e-06C2.82105 -0.00296648 1.48043 1.01231 1.06573 2.48447L13.701 15.0002Z" fill="#34A853"></path>
+            </svg>
+            <span class="ml-2">Google Play</span>
+          </button>
+          <button class="button is-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+              <path d="M25.8298 31.7964C24.2144 33.3795 22.4508 33.1295 20.753 32.3796C18.9563 31.6131 17.308 31.5797 15.4125 32.3796C13.0389 33.4128 11.7862 33.1129 10.3687 31.7964C2.32493 23.4141 3.51171 10.649 12.6433 10.1824C14.8685 10.2991 16.418 11.4156 17.7201 11.5156C19.6651 11.1156 21.5277 9.96579 23.6046 10.1158C26.0935 10.3157 27.9726 11.3156 29.2088 13.1154C24.0661 16.2317 25.2858 23.0808 30 24.9972C29.0605 27.4969 27.8407 29.9799 25.8133 31.813L25.8298 31.7964ZM17.5553 10.0824C17.308 6.36624 20.2915 3.29996 23.72 3C24.198 7.29946 19.8629 10.4991 17.5553 10.0824Z" fill="url(#paint0_linear_1290_232)"></path>
+              <defs>
+                <linearGradient id="paint0_linear_1290_232" x1="1.93878" y1="-17.9375" x2="31.8437" y2="-18.7584" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#89A3B3"></stop>
+                  <stop offset="1" stop-color="#37525E"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="ml-2">App Store</span>
+          </button>
+        </div>
+      </div>
+    </div>
     
-    
-    
-  </body>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer mt-6">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          Dipnot
+        </div>
+
+        <div class="column">
+          <aside class="menu">
+            <p class="menu-label">Site Haritası</p>
+            <ul class="menu-list">
+              <li><a href="#" style="background-color: transparent;">Ana Sayfa</a></li>
+              <li><a href="#about" style="background-color: transparent;">Dipnot Nedir?</a></li>
+              <li><a href="#features" style="background-color: transparent;">Özellikler</a></li>
+              <li><a href="#how-it-works" style="background-color: transparent;">Nasıl Çalışır?</a></li>
+              <li><a href="#faq" style="background-color: transparent;">S.S.S.</a></li>
+              <li><a href="#contact" style="background-color: transparent;">İletişim</a></li>
+            </ul>
+          </aside>
+        </div>
+
+        <div class="column">
+          Bülten
+        </div>
+
+        <div class="column">
+          İletişim
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="columns mt-6">
+        <div class="column has-text-centered">
+          <a href="#">Gizlilik Politikası</a> <span class="mx-4">|</span> Website <a href="https?//vacstudio.com/" target="_blank">V.A.C. Studio</a> tarafından geliştirilmiştir.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>
