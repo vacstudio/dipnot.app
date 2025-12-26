@@ -1,3 +1,9 @@
+:root {
+  --color-logo: #338496;
+  --color-primary: #04d1b2;
+}
+
+
 .faq-content {
   transition: all 0.3s ease;
 }
@@ -15,5 +21,5 @@
 }
 
 .menu-list a:hover {
-  color: #04d1b2;
+  color: var(--color-primary);
 }
