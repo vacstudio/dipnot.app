@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
@@ -268,68 +270,59 @@
           <h2 class="title is-2 mb-6">Sıkça Sorulan Sorular</h2>
 
           <div class="card">
-            <header class="card-header">
-              <p class="card-header-title">Card header</p>
+            <header class="card-header is-clickable">
+              <p class="card-header-title">Dipnot’ta ne tür içerikler bulabilirim?</p>
               <button class="card-header-icon" aria-label="more options">
                 <span class="icon">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  <i class="fas fa-angle-down faq-icon" aria-hidden="true"></i>
                 </span>
               </button>
             </header>
-
-            <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nam ea, blanditiis tempora dolorum animi itaque dolor tempore, vel sapiente a architecto vitae facere odio ab soluta autem unde maxime?</div>
+            <div class="card-content faq-content is-hidden">
+              Dipnot’ta dalış güvenliği, ekipman, çevre, tarih ve dalış kültürü gibi farklı başlıklar altında hazırlanmış, derinlikli makaleler bulabilirsin. İçerikler hızlı tüketim için değil, tekrar tekrar başvurulabilecek şekilde hazırlanır.
+            </div>
           </div>
 
           <div class="card">
-            <header class="card-header">
-              <p class="card-header-title">Card header</p>
+            <header class="card-header is-clickable">
+              <p class="card-header-title">Dipnot’u diğer dalış bloglarından ayıran nedir?</p>
               <button class="card-header-icon" aria-label="more options">
                 <span class="icon">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  <i class="fas fa-angle-down faq-icon" aria-hidden="true"></i>
                 </span>
               </button>
             </header>
-
-            <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nam ea, blanditiis tempora dolorum animi itaque dolor tempore, vel sapiente a architecto vitae facere odio ab soluta autem unde maxime?</div>
+            <div class="card-content faq-content is-hidden">
+              Dipnot, dağınık içerikler yerine tek bir platformda, küratörlü ve düzenli bir okuma deneyimi sunar. Reklam odaklı değil, bilgi odaklıdır.
+            </div>
           </div>
 
           <div class="card">
-            <header class="card-header">
-              <p class="card-header-title">Card header</p>
+            <header class="card-header is-clickable">
+              <p class="card-header-title">Uygulama tamamen ücretsiz mi?</p>
               <button class="card-header-icon" aria-label="more options">
                 <span class="icon">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  <i class="fas fa-angle-down faq-icon" aria-hidden="true"></i>
                 </span>
               </button>
             </header>
-
-            <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nam ea, blanditiis tempora dolorum animi itaque dolor tempore, vel sapiente a architecto vitae facere odio ab soluta autem unde maxime?</div>
+            <div class="card-content faq-content is-hidden">
+              Dipnot’un temel içeriklerine ücretsiz olarak erişebilirsin. İlerleyen dönemde, özel dosyalar ve derinlemesine içerikler için ücretli üyelik seçenekleri sunulacaktır.
+            </div>
           </div>
 
           <div class="card">
-            <header class="card-header">
-              <p class="card-header-title">Card header</p>
+            <header class="card-header is-clickable">
+              <p class="card-header-title">Yeni içerikler ne sıklıkla yayınlanıyor?</p>
               <button class="card-header-icon" aria-label="more options">
                 <span class="icon">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  <i class="fas fa-angle-down faq-icon" aria-hidden="true"></i>
                 </span>
               </button>
             </header>
-
-            <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nam ea, blanditiis tempora dolorum animi itaque dolor tempore, vel sapiente a architecto vitae facere odio ab soluta autem unde maxime?</div>
-          </div>
-
-          <div class="card">
-            <header class="card-header">
-              <p class="card-header-title">Card header</p>
-              <button class="card-header-icon" aria-label="more options">
-                <span class="icon">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
-                </span>
-              </button>
-            </header>
-
-            <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nam ea, blanditiis tempora dolorum animi itaque dolor tempore, vel sapiente a architecto vitae facere odio ab soluta autem unde maxime?</div>
+            <div class="card-content faq-content is-hidden">
+              Yeni makaleler düzenli olarak eklenir. Profil oluşturarak ilgi alanlarını seçebilir ve yayınlanan içerleri kolayca takip edebilirsin.
+            </div>
           </div>
 
         </div>
@@ -409,6 +402,9 @@
       </div>
     </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
 
 </body>
 </html>

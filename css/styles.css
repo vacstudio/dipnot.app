@@ -1,0 +1,11 @@
+.faq-content {
+  transition: all 0.3s ease;
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+}
+
+.faq-icon.is-rotated {
+  transform: rotate(180deg);
+}
