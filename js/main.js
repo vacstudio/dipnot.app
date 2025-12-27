@@ -25,10 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Theme Toggle
+// Theme Toggle (desktop + mobile)
 document.addEventListener('DOMContentLoaded', () => {
-  const themeToggle = document.getElementById('theme-toggle');
-  if (!themeToggle) return;
+  const themeToggles = document.querySelectorAll(
+    '#theme-toggle, #theme-toggle-mobile'
+  );
+
+  if (!themeToggles.length) return;
 
   const getTheme = () =>
     document.documentElement.getAttribute('data-theme') || 'dark';
@@ -37,16 +40,21 @@ document.addEventListener('DOMContentLoaded', () => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
 
-    themeToggle.innerHTML =
-      theme === 'dark'
-        ? '<span class="icon"><i class="fa-solid fa-moon has-text-link"></i></span>'
-        : '<span class="icon"><i class="fa-solid fa-sun has-text-warning"></i></span>';
+    themeToggles.forEach(toggle => {
+      toggle.innerHTML =
+        theme === 'dark'
+          ? '<span class="icon"><i class="fa-solid fa-moon has-text-link"></i></span>'
+          : '<span class="icon"><i class="fa-solid fa-sun has-text-warning"></i></span>';
+    });
   };
 
-  // icon + state sync
-  setTheme(getTheme());
+  // Initial sync
+  setTheme(localStorage.getItem('theme') || getTheme());
 
-  themeToggle.addEventListener('click', () => {
-    setTheme(getTheme() === 'dark' ? 'light' : 'dark');
+  // Click handlers
+  themeToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      setTheme(getTheme() === 'dark' ? 'light' : 'dark');
+    });
   });
 });
