@@ -58,5 +58,8 @@
   <!-- Scripts -->
   <script src="/js/main.js?v={{ site.jsVersion }}"></script>
   <script src="/js/newsletter.js?v={{ site.jsVersion }}"></script>
+  {%- if hasContactForm %}
+  <script src="/js/contact.js?v={{ site.jsVersion }}"></script>
+  {%- endif %}
 </body>
 </html>
