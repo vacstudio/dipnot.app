@@ -6,12 +6,30 @@
   <meta name="author" content="Nevcan Uludaş">
   <meta name="description" content="Dipnot, dalış ve su altı dünyasına ilgi duyanlar için hazırlanmış makale odaklı bir mobil içerik platformudur. Güvenilir, sade ve nitelikli dalış yazıları sunar.">
   <meta name="keywords" content="dalış, scuba diving, su altı, dalış makaleleri, dalış blogu, scuba, dalış güvenliği, dalış ekipmanları, su altı yaşamı, dalış eğitimi, dipnot app">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=(), payment=()">
+  <meta name="theme-color" content="#338596">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dipnot">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:title" content="Dipnot | Su altını okumaya hazır mısınız!">
+  <meta property="og:description" content="Dipnot, dalış ve su altı dünyasına ilgi duyanlar için hazırlanmış makale odaklı bir mobil içerik platformudur.">
+  <meta property="og:url" content="https://dipnot.app/">
+  <meta property="og:image" content="https://dipnot.app/android-chrome-512x512.png">
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dipnot | Su altını okumaya hazır mısınız!">
+  <meta name="twitter:description" content="Dipnot, dalış ve su altı dünyasına ilgi duyanlar için hazırlanmış makale odaklı bir mobil içerik platformudur.">
+  <meta name="twitter:image" content="https://dipnot.app/android-chrome-512x512.png">
 
   <title>Dipnot | Su altını okumaya hazır mısınız!</title>
   <!-- Bulma CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" integrity="sha384-DCY3M8xLkMu6c9IKcKbe+jHKMjelnwC0p+SBaxfHxoBYZWdJF2X400UdBCgATtAB" crossorigin="anonymous">
   <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha384-PPIZEGYM1v8zp5Py7UjFb79S58UeqCL9pYVnVPURKEqvioPROaVAJKKLzvH2rDnI" crossorigin="anonymous">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/styles.css?v=260417_1">
 
@@ -100,7 +118,7 @@
     <div class="hero-body">
       <div class="columns">
         <div class="column is-align-content-center">
-          <p class="title is-size-1 has-text-white mb-5">Su Altını <span class="has-text-primary">Okumaya</span> <span style="white-space: nowrap;">Hazır mısınız?</span></p>
+          <h1 class="title is-size-1 has-text-white mb-5">Su Altını <span class="has-text-primary">Okumaya</span> <span style="white-space: nowrap;">Hazır mısınız?</span></h1>
           <p class="subtitle has-text-white">Etkinliklerden teknolojiye, güvenlikten ekipmanlara dalış dünyasını derinlemesine ele alan içerikler...</p>
           <div class="buttons are-large mt-6 is-flex is-justify-content-center mb-6">
             <button class="button is-light is-outlined is-rounded">
@@ -402,11 +420,11 @@
                     <label class="label">Konu</label>
                     <div class="control">
                       <div class="select is-fullwidth">
-                        <select>
-                          <option>Genel Bilgi</option>
-                          <option>Teknik Destek</option>
-                          <option>İş Birliği</option>
-                          <option>Geri Bildirim</option>
+                        <select name="subject">
+                          <option value="general">Genel Bilgi</option>
+                          <option value="support">Teknik Destek</option>
+                          <option value="partnership">İş Birliği</option>
+                          <option value="feedback">Geri Bildirim</option>
                         </select>
                       </div>
                     </div>
@@ -426,7 +444,7 @@
                       <label class="checkbox">
                         <input type="checkbox" required>
                         <span>
-                          <a href="/kullanim-kosullari.html" target="_blank">Kullanım Koşulları</a> ve <a href="/gizlilik-politikasi.html" target="_blank">Gizlilik Politikası</a> bilgilendirme metinlerini okudum ve kabul ediyorum.
+                          <a href="/kullanim-kosullari.html" target="_blank" rel="noopener noreferrer">Kullanım Koşulları</a> ve <a href="/gizlilik-politikasi.html" target="_blank" rel="noopener noreferrer">Gizlilik Politikası</a> bilgilendirme metinlerini okudum ve kabul ediyorum.
                         </span>
                       </label>
                     </div>
@@ -474,39 +492,39 @@
 
           <p>Dalış dünyasına dair paylaşımlar için bizi sosyal ağlarda takip edin:</p>
           <div class="buttons are-large mt-5">
-            <a href="https://www.instagram.com/dipnot.app" target="_blank" class="button is-rounded" title="Instagram">
+            <a href="https://www.instagram.com/dipnot.app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Instagram">
               <span class="icon is-small">
                 <i class="fa-brands fa-instagram"></i>
               </span>
             </a>
 
             <!-- TODO: add social media link -->
-            <a href="https://www.instagram.com/dipnot.app" target="_blank" class="button is-rounded" title="Facebook">
+            <a href="https://www.instagram.com/dipnot.app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Facebook">
               <span class="icon is-small">
                 <i class="fa-brands fa-facebook"></i>
               </span>
             </a>
             
             <!-- TODO: add social media link -->
-            <a href="https://www.instagram.com/dipnot.app" target="_blank" class="button is-rounded" title="X">
+            <a href="https://www.instagram.com/dipnot.app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="X">
               <span class="icon is-small">
                 <i class="fa-brands fa-x-twitter"></i>
               </span>
             </a>
 
-            <a href="https://www.linkedin.com/company/dipnotapp" target="_blank" class="button is-rounded" title="Linkedin">
+            <a href="https://www.linkedin.com/company/dipnotapp" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Linkedin">
               <span class="icon is-small">
                 <i class="fa-brands fa-linkedin"></i>
               </span>
             </a>
 
-            <a href="https://theorg.com/org/dipnot-1" target="_blank" class="button is-rounded" title="The Org">
+            <a href="https://theorg.com/org/dipnot-1" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="The Org">
               <span class="icon is-small">
                 <i class="fa-solid fa-sitemap"></i>
               </span>
             </a>
 
-            <a href="https://stackshare.io/nevcanuludas/dipnot-app" target="_blank" class="button is-rounded" title="Stack Share">
+            <a href="https://stackshare.io/nevcanuludas/dipnot-app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Stack Share">
               <span class="icon is-small">
                 <i class="fa-solid fa-share-nodes"></i>
               </span>
@@ -605,9 +623,9 @@
 
       <div class="columns mt-6">
         <div class="column has-text-centered">
-          Copyright &copy; 2025 <span class="mx-4">|</span> <a href="/gizlilik-politikasi.html">Gizlilik Politikası</a> <span class="mx-4">|</span> <a href="/kullanim-kosullari.html">Kullanım Koşulları</a>
+          Copyright &copy; 2025&ndash;2026 <span class="mx-4">|</span> <a href="/gizlilik-politikasi.html">Gizlilik Politikası</a> <span class="mx-4">|</span> <a href="/kullanim-kosullari.html">Kullanım Koşulları</a>
           <br>
-          Website <a href="https://vacstudio.com/" target="_blank">V.A.C. Studio</a> tarafından geliştirilmiştir.
+          Website <a href="https://vacstudio.com/" target="_blank" rel="noopener noreferrer">V.A.C. Studio</a> tarafından geliştirilmiştir.
         </div>
       </div>
     </div>
