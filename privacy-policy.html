@@ -1,407 +1,145 @@
-<!DOCTYPE html>
-<html lang="en" class="has-navbar-fixed-top">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Nevcan Uludaş">
-  <meta name="description" content="Dipnot Privacy Policy (KVKK) — how your personal data is processed. English mirror; Turkish version is authoritative.">
-  <meta name="keywords" content="dipnot, privacy policy, kvkk, personal data">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=(), payment=()">
-  <meta name="theme-color" content="#338596">
-  <link rel="alternate" hreflang="tr" href="https://dipnot.app/gizlilik-politikasi.html">
-  <link rel="alternate" hreflang="en" href="https://dipnot.app/privacy-policy.html">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Dipnot">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:locale:alternate" content="tr_TR">
-  <meta property="og:title" content="Privacy Policy (KVKK) | Dipnot App">
-  <meta property="og:description" content="Dipnot Privacy Policy (KVKK) — how your personal data is processed.">
-  <meta property="og:url" content="https://dipnot.app/privacy-policy.html">
-  <meta property="og:image" content="https://dipnot.app/android-chrome-512x512.png">
-
-  <title>Privacy Policy (KVKK) | Dipnot App</title>
-  <!-- Bulma CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" integrity="sha384-DCY3M8xLkMu6c9IKcKbe+jHKMjelnwC0p+SBaxfHxoBYZWdJF2X400UdBCgATtAB" crossorigin="anonymous">
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha384-PPIZEGYM1v8zp5Py7UjFb79S58UeqCL9pYVnVPURKEqvioPROaVAJKKLzvH2rDnI" crossorigin="anonymous">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./css/styles.css?v=260417_1">
-
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-</head>
-<body>
-
-  <!-- NAVIGATION -->
-  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-    <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item has-text-weight-bold" href="/">
-          <img src="./img/logos/logo.svg" alt="Dipnot">
-          Dipnot
-        </a>
-
-        <div class="buttons" style="margin-left: auto">
-          <div class="navbar-item is-hidden-desktop">
-            <button
-            id="theme-toggle-mobile"
-            class="button is-text"
-            aria-label="Tema Değiştir"
-            style="text-decoration: none;"
-            >
-              <span class="icon">
-                <i class="fa-solid fa-moon"></i>
-              </span>
-            </button>
-          </div>
-
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-      </div>
-
-      <div id="navbar" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="/">Ana Sayfa</a>
-          <a class="navbar-item" href="/#about">Dipnot Nedir?</a>
-          <a class="navbar-item" href="/#features">Özellikler</a>
-          <a class="navbar-item" href="/#how-it-works">Nasıl Çalışır?</a>
-          <a class="navbar-item" href="/#faq">S.S.S.</a>
-          <a class="navbar-item" href="/#contact">İletişim</a>
-        </div>
-
-        <div class="navbar-end">
-          <div class="navbar-item is-hidden-touch">
-            <button
-              id="theme-toggle"
-              class="button is-text"
-              aria-label="Tema Değiştir"
-              style="text-decoration: none;"
-            >
-              <span class="icon">
-                <i class="fa-solid fa-moon"></i>
-              </span>
-            </button>
-          </div>
-          <div class="navbar-item">
-            <div class="buttons are-small">
-              <a class="button is-light is-inverted is-outlined is-rounded">
-                <img src="/img/svg/google-play.svg" alt="Google Play">
-                <span class="ml-2">Google Play</span>
-              </a>
-              <a class="button is-light is-rounded">
-                <img src="/img/svg/app-store.svg" alt="App Store">
-                <span class="ml-2">App Store</span>
-              </a>
-            </div>
-          </div>
-        </div>
+---
+layout: base.njk
+lang: en
+title: "Privacy Policy (KVKK) | Dipnot App"
+description: "Dipnot Privacy Policy (KVKK) — how your personal data is processed. English mirror; Turkish version is authoritative."
+keywords: "dipnot, privacy policy, kvkk, personal data"
+hreflang:
+  - lang: tr
+    href: "https://dipnot.app/gizlilik-politikasi.html"
+  - lang: en
+    href: "https://dipnot.app/privacy-policy.html"
+og:
+  locale: en_US
+  localeAlternate: tr_TR
+  url: "https://dipnot.app/privacy-policy.html"
+  description: "Dipnot Privacy Policy (KVKK) — how your personal data is processed."
+---
+<!-- HERO BANNER -->
+<section class="hero has-background-hero">
+  <div class="hero-body">
+    <div class="columns">
+      <div class="column">
+        <p class="title is-size-1 has-text-white mb-5">Privacy <span class="has-text-primary">Policy</span> <span style="white-space: nowrap;">(KVKK)</span></p>
       </div>
     </div>
-  </nav>
+  </div>
+</section>
 
-  <!-- HERO BANNER -->
-  <section class="hero has-background-hero">
-    <div class="hero-body">
-      <div class="columns">
-        <div class="column">
-          <p class="title is-size-1 has-text-white mb-5">Privacy <span class="has-text-primary">Policy</span> <span style="white-space: nowrap;">(KVKK)</span></p>
-        </div>
+<!-- MAIN PAGE -->
+<main class="container py-6">
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="content">
+      <h1>Privacy Policy (KVKK)</h1>
+      <p><strong>Last updated:</strong> <time datetime="2026-04-17">17 April 2026</time></p>
+
+      <div class="notification is-warning">
+        <p><strong>Note:</strong> This English version is provided for convenience. The Turkish version, <a href="/gizlilik-politikasi.html">Gizlilik Politikası ve Aydınlatma Metni</a>, is authoritative under Turkish law (KVKK) in case of any conflict.</p>
       </div>
+
+      <h2>1. Data Controller</h2>
+      <p>Under the Turkish Personal Data Protection Law No. 6698 ("KVKK"), your personal data is processed by the team operating the "Dipnot" application as data controller, within the scope described below.</p>
+      <ul>
+        <li>Data Controller: Dipnot Application Team</li>
+        <li>Contact email: help@dipnot.app</li>
+      </ul>
+
+      <h2>2. Personal Data Collected, Purposes of Processing, and Legal Basis</h2>
+      <p>When you register for and use the Dipnot application, the following data is processed:</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Data Category</th>
+            <th>Data Collected</th>
+            <th>Purpose of Processing</th>
+            <th>Legal Basis (KVKK art. 5)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Identity</th>
+            <td>First name, Last name</td>
+            <td>Account creation, identifying users, personalising profiles</td>
+            <td>Explicit consent</td>
+          </tr>
+          <tr>
+            <th>Contact</th>
+            <td>Email address, Phone number</td>
+            <td>Account verification (email verification), password reset, sending notifications, communicating with the user</td>
+            <td>Explicit consent</td>
+          </tr>
+          <tr>
+            <th>Usage Data</th>
+            <td>Articles read, likes, saved content, session durations</td>
+            <td>Content recommendations, improving the experience, trend analysis</td>
+            <td>Legitimate interest</td>
+          </tr>
+          <tr>
+            <th>Technical Data</th>
+            <td>Device model, operating system version, IP address, app version</td>
+            <td>Ensuring the app works, debugging, security</td>
+            <td>Legitimate interest</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>3. Third Parties and Cross-Border Transfers</h2>
+      <p>Your personal data may be shared with third parties limited to the following service providers:</p>
+      <ul>
+        <li>
+          <strong>Google Firebase and Google Cloud Platform (eur3 – Europe):</strong>
+          <br>
+          <span>For authentication, database (Firestore), file storage (Storage), and push notifications. Your data is hosted on servers in Europe (Frankfurt, eur3).</span>
+        </li>
+        <li>
+          <strong>Expo (Expo Application Services, Inc. – USA):</strong>
+          <br>
+          <span>The Dipnot mobile app is built on the Expo / React Native stack. Your push notification tokens are processed through the Expo Push service and used to deliver notifications. Limited device and runtime information (device model, operating system version, app version) may be sent to Expo's servers in the USA for stability monitoring and debugging. This transfer is carried out based on your explicit consent under KVKK article 9.</span>
+        </li>
+        <li>
+          <strong>Google Analytics (Google Analytics for Firebase):</strong>
+          <br>
+          <span>Used to analyse in-app usage statistics, understand user behaviour, and improve the experience. Data collected includes device identifiers, session durations, screen views, and in-app interaction events. We do not share this data with marketing or third-party ad networks.</span>
+        </li>
+      </ul>
+      <p>Where cross-border transfer is involved, transfers are made under KVKK article 9 to countries with adequate protection (e.g. EU countries) or to service providers that have committed in writing to provide adequate protection. Transfers to US-based providers (including Expo) are carried out with your explicit consent or under the safeguards required by KVKK article 9.</p>
+
+      <h2>4. Method of Collection and Legal Basis</h2>
+      <p>Your personal data is obtained when the Dipnot registration form is filled in, through in-app interactions, and via automatic collection of technical data. Our processing activities rely on the following legal bases set out in KVKK article 5:</p>
+      <ul>
+        <li>Explicit consent (for identity and contact information)</li>
+        <li>Legitimate interest (for analysis of usage and technical data)</li>
+      </ul>
+
+      <h2>5. Retention Period</h2>
+      <p>Your personal data is retained for as long as the purposes of processing require. This corresponds to the period during which your account is active. When you delete your account or request its deletion, your data is anonymised or erased within 30 days at the latest. Data that must be retained due to legal obligations (e.g. commercial communication records) is kept for the periods specified in the relevant legislation.</p>
+
+      <h2>6. Data Subject Rights (KVKK art. 11)</h2>
+      <p>Under KVKK article 11 you have the following rights:</p>
+      <ul>
+        <li>To learn whether your personal data is being processed</li>
+        <li>To request information if it has been processed</li>
+        <li>To learn the purpose of processing and whether it is used for its intended purpose</li>
+        <li>To know the third parties to whom data has been transferred domestically or abroad</li>
+        <li>To request correction if data has been processed incompletely or incorrectly</li>
+        <li>To request deletion or destruction under the conditions set out in KVKK article 7</li>
+        <li>To request that the above correction and deletion actions be communicated to third parties to whom data has been transferred</li>
+        <li>To object to an outcome adverse to you resulting from analysis of processed data solely by automated systems</li>
+        <li>To claim compensation for damage suffered due to unlawful processing</li>
+      </ul>
+      <p>You can exercise these rights by contacting help@dipnot.app with information sufficient to verify your identity. Your requests will be answered free of charge as soon as possible (within 30 days at the latest).</p>
+
+      <h2>7. Advertising and Marketing Emails</h2>
+      <p>Dipnot does not currently use any advertising network (AdMob, etc.). If we wish to send informational emails about product updates, new features, or special offers in the future, we will ask for your explicit consent separately. You can give this consent at registration or from the settings screen, and withdraw it at any time.</p>
+
+      <h2>8. Children's Data</h2>
+      <p>Dipnot does not knowingly or intentionally collect personal data of individuals under 18 years of age. Use of the application by children without parental supervision is not recommended.</p>
+
+      <h2>9. Changes</h2>
+      <p>This Privacy Policy may be updated as needed. Significant changes will be announced through an in-app notification or by email. Continued use of the application after changes take effect means you accept the updated policy.</p>
     </div>
   </section>
 
-  <!-- MAIN PAGE -->
-  <main class="container py-6">
-
-    <!-- CONTENT -->
-    <section class="section">
-      <div class="content">
-        <h1>Privacy Policy (KVKK)</h1>
-        <p><strong>Last updated:</strong> <time datetime="2026-04-17">17 April 2026</time></p>
-
-        <div class="notification is-warning">
-          <p><strong>Note:</strong> This English version is provided for convenience. The Turkish version, <a href="/gizlilik-politikasi.html">Gizlilik Politikası ve Aydınlatma Metni</a>, is authoritative under Turkish law (KVKK) in case of any conflict.</p>
-        </div>
-
-        <h2>1. Data Controller</h2>
-        <p>Under the Turkish Personal Data Protection Law No. 6698 ("KVKK"), your personal data is processed by the team operating the "Dipnot" application as data controller, within the scope described below.</p>
-        <ul>
-          <li>Data Controller: Dipnot Application Team</li>
-          <li>Contact email: help@dipnot.app</li>
-        </ul>
-
-        <h2>2. Personal Data Collected, Purposes of Processing, and Legal Basis</h2>
-        <p>When you register for and use the Dipnot application, the following data is processed:</p>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Data Category</th>
-              <th>Data Collected</th>
-              <th>Purpose of Processing</th>
-              <th>Legal Basis (KVKK art. 5)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>Identity</th>
-              <td>First name, Last name</td>
-              <td>Account creation, identifying users, personalising profiles</td>
-              <td>Explicit consent</td>
-            </tr>
-            <tr>
-              <th>Contact</th>
-              <td>Email address, Phone number</td>
-              <td>Account verification (email verification), password reset, sending notifications, communicating with the user</td>
-              <td>Explicit consent</td>
-            </tr>
-            <tr>
-              <th>Usage Data</th>
-              <td>Articles read, likes, saved content, session durations</td>
-              <td>Content recommendations, improving the experience, trend analysis</td>
-              <td>Legitimate interest</td>
-            </tr>
-            <tr>
-              <th>Technical Data</th>
-              <td>Device model, operating system version, IP address, app version</td>
-              <td>Ensuring the app works, debugging, security</td>
-              <td>Legitimate interest</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2>3. Third Parties and Cross-Border Transfers</h2>
-        <p>Your personal data may be shared with third parties limited to the following service providers:</p>
-        <ul>
-          <li>
-            <strong>Google Firebase and Google Cloud Platform (eur3 – Europe):</strong>
-            <br>
-            <span>For authentication, database (Firestore), file storage (Storage), and push notifications. Your data is hosted on servers in Europe (Frankfurt, eur3).</span>
-          </li>
-          <li>
-            <strong>Expo (Expo Application Services, Inc. – USA):</strong>
-            <br>
-            <span>The Dipnot mobile app is built on the Expo / React Native stack. Your push notification tokens are processed through the Expo Push service and used to deliver notifications. Limited device and runtime information (device model, operating system version, app version) may be sent to Expo's servers in the USA for stability monitoring and debugging. This transfer is carried out based on your explicit consent under KVKK article 9.</span>
-          </li>
-          <li>
-            <strong>Google Analytics (Google Analytics for Firebase):</strong>
-            <br>
-            <span>Used to analyse in-app usage statistics, understand user behaviour, and improve the experience. Data collected includes device identifiers, session durations, screen views, and in-app interaction events. We do not share this data with marketing or third-party ad networks.</span>
-          </li>
-        </ul>
-        <p>Where cross-border transfer is involved, transfers are made under KVKK article 9 to countries with adequate protection (e.g. EU countries) or to service providers that have committed in writing to provide adequate protection. Transfers to US-based providers (including Expo) are carried out with your explicit consent or under the safeguards required by KVKK article 9.</p>
-
-        <h2>4. Method of Collection and Legal Basis</h2>
-        <p>Your personal data is obtained when the Dipnot registration form is filled in, through in-app interactions, and via automatic collection of technical data. Our processing activities rely on the following legal bases set out in KVKK article 5:</p>
-        <ul>
-          <li>Explicit consent (for identity and contact information)</li>
-          <li>Legitimate interest (for analysis of usage and technical data)</li>
-        </ul>
-
-        <h2>5. Retention Period</h2>
-        <p>Your personal data is retained for as long as the purposes of processing require. This corresponds to the period during which your account is active. When you delete your account or request its deletion, your data is anonymised or erased within 30 days at the latest. Data that must be retained due to legal obligations (e.g. commercial communication records) is kept for the periods specified in the relevant legislation.</p>
-
-        <h2>6. Data Subject Rights (KVKK art. 11)</h2>
-        <p>Under KVKK article 11 you have the following rights:</p>
-        <ul>
-          <li>To learn whether your personal data is being processed</li>
-          <li>To request information if it has been processed</li>
-          <li>To learn the purpose of processing and whether it is used for its intended purpose</li>
-          <li>To know the third parties to whom data has been transferred domestically or abroad</li>
-          <li>To request correction if data has been processed incompletely or incorrectly</li>
-          <li>To request deletion or destruction under the conditions set out in KVKK article 7</li>
-          <li>To request that the above correction and deletion actions be communicated to third parties to whom data has been transferred</li>
-          <li>To object to an outcome adverse to you resulting from analysis of processed data solely by automated systems</li>
-          <li>To claim compensation for damage suffered due to unlawful processing</li>
-        </ul>
-        <p>You can exercise these rights by contacting help@dipnot.app with information sufficient to verify your identity. Your requests will be answered free of charge as soon as possible (within 30 days at the latest).</p>
-
-        <h2>7. Advertising and Marketing Emails</h2>
-        <p>Dipnot does not currently use any advertising network (AdMob, etc.). If we wish to send informational emails about product updates, new features, or special offers in the future, we will ask for your explicit consent separately. You can give this consent at registration or from the settings screen, and withdraw it at any time.</p>
-
-        <h2>8. Children's Data</h2>
-        <p>Dipnot does not knowingly or intentionally collect personal data of individuals under 18 years of age. Use of the application by children without parental supervision is not recommended.</p>
-
-        <h2>9. Changes</h2>
-        <p>This Privacy Policy may be updated as needed. Significant changes will be announced through an in-app notification or by email. Continued use of the application after changes take effect means you accept the updated policy.</p>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer mt-6">
-    <div class="container">
-      <div class="columns">
-        <div class="column mb-6">
-          <div class="level">
-            <div class="level-left">
-              <div class="level-item">
-                <figure class="image is-48x48">
-                  <img class="is-rounded" src="./img/logos/logo.svg" alt="Dipnot">
-                </figure>
-              </div>
-
-              <div class="level-item">
-                <h4 class="title">Dipnot</h4>
-              </div>
-            </div>
-          </div>
-
-          <p>Dalış dünyasına dair paylaşımlar için bizi sosyal ağlarda takip edin:</p>
-          <div class="buttons are-large mt-5">
-            <a href="https://www.instagram.com/dipnot.app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Instagram">
-              <span class="icon is-small">
-                <i class="fa-brands fa-instagram"></i>
-              </span>
-            </a>
-
-            <!-- TODO: add social media link -->
-            <a href="https://www.instagram.com/dipnot.app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Facebook">
-              <span class="icon is-small">
-                <i class="fa-brands fa-facebook"></i>
-              </span>
-            </a>
-
-            <!-- TODO: add social media link -->
-            <a href="https://www.instagram.com/dipnot.app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="X">
-              <span class="icon is-small">
-                <i class="fa-brands fa-x-twitter"></i>
-              </span>
-            </a>
-
-            <a href="https://www.linkedin.com/company/dipnotapp" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Linkedin">
-              <span class="icon is-small">
-                <i class="fa-brands fa-linkedin"></i>
-              </span>
-            </a>
-
-            <a href="https://theorg.com/org/dipnot-1" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="The Org">
-              <span class="icon is-small">
-                <i class="fa-solid fa-sitemap"></i>
-              </span>
-            </a>
-
-            <a href="https://stackshare.io/nevcanuludas/dipnot-app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Stack Share">
-              <span class="icon is-small">
-                <i class="fa-solid fa-share-nodes"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-
-        <div class="column mb-6">
-          <aside class="menu">
-            <p class="menu-label">Site Haritası</p>
-            <ul class="menu-list">
-              <li><a href="#" style="background-color: transparent;">Ana Sayfa</a></li>
-              <li><a href="#about" style="background-color: transparent;">Dipnot Nedir?</a></li>
-              <li><a href="#features" style="background-color: transparent;">Özellikler</a></li>
-              <li><a href="#how-it-works" style="background-color: transparent;">Nasıl Çalışır?</a></li>
-              <li><a href="#faq" style="background-color: transparent;">S.S.S.</a></li>
-              <li><a href="#contact" style="background-color: transparent;">İletişim</a></li>
-            </ul>
-          </aside>
-        </div>
-
-        <!-- Newsletter -->
-        <div class="column mb-6">
-          <aside class="menu pr-5">
-            <p class="menu-label">Bülten Aboneliği</p>
-
-            <form id="newsletter-form">
-              <div class="field">
-                <div class="control has-icons-left">
-                  <input
-                    class="input"
-                    type="email"
-                    id="newsletter-email"
-                    placeholder="E-posta adresiniz"
-                    required
-                  />
-                  <span class="icon is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </div>
-              </div>
-
-              <div class="field">
-                <button class="button is-primary is-fullwidth" type="submit">
-                  Abone Ol
-                </button>
-              </div>
-
-              <p id="newsletter-message" class="help"></p>
-            </form>
-          </aside>
-
-          <aside class="menu pr-5 mt-6">
-            <p class="menu-label">Uygulamayı indir</p>
-
-            <div class="buttons are-small">
-              <button class="button is-light is-inverted is-outlined is-rounded">
-                <img src="/img/svg/google-play.svg" alt="Google Play">
-                <span class="ml-2">Google Play</span>
-              </button>
-              <button class="button is-light is-rounded">
-                <img src="/img/svg/app-store.svg" alt="App Store">
-                <span class="ml-2">App Store</span>
-              </button>
-            </div>
-          </aside>
-        </div>
-
-        <div class="column mb-6">
-          <aside class="menu">
-            <p class="menu-label">İletişim</p>
-
-            <address class="mb-4">1. Kısım Mah. Vali Recep Yazıcıoğlu Cad. Doğa Parkı Evleri BC Blok No:15/13 Bahçeşehir, İstanbul, Türkiye.</address>
-
-            <p class="has-text-weight-semibold mt-4">Genel İletişim:</p>
-            <p>
-              <span class="icon mr-2">
-                <i class="fa-solid fa-envelope"></i>
-              </span>
-              <a href="mailto:info@dipnot.app">info@dipnot.app</a>
-            </p>
-
-            <p class="has-text-weight-semibold mt-4">Teknik Destek:</p>
-            <p>
-              <span class="icon mr-2">
-                <i class="fa-solid fa-life-ring"></i>
-              </span>
-              <a href="mailto:help@dipnot.app">help@dipnot.app</a>
-            </p>
-
-          </aside>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="columns mt-6">
-        <div class="column has-text-centered">
-          Copyright &copy; 2025&ndash;2026 <span class="mx-4">|</span> <a href="/gizlilik-politikasi.html">Gizlilik Politikası</a> <span class="mx-4">|</span> <a href="/kullanim-kosullari.html">Kullanım Koşulları</a>
-          <br>
-          Website <a href="https://vacstudio.com/" target="_blank" rel="noopener noreferrer">V.A.C. Studio</a> tarafından geliştirilmiştir.
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="./js/main.js?v=251227_1"></script>
-  <script src="./js/newsletter.js?v=251229_1"></script>
-
-</body>
-</html>
+</main>

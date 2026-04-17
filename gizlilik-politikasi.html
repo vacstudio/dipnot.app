@@ -1,402 +1,141 @@
-<!DOCTYPE html>
-<html lang="tr" class="has-navbar-fixed-top">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Nevcan Uludaş">
-  <meta name="description" content="Dipnot Gizlilik Politikası ve Aydınlatma Metni (KVKK). Kişisel verilerinizin nasıl işlendiğine dair bilgiler.">
-  <meta name="keywords" content="dipnot, gizlilik, kvkk, aydınlatma metni, kişisel veri">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=(), payment=()">
-  <meta name="theme-color" content="#338596">
-  <link rel="alternate" hreflang="tr" href="https://dipnot.app/gizlilik-politikasi.html">
-  <link rel="alternate" hreflang="en" href="https://dipnot.app/privacy-policy.html">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Dipnot">
-  <meta property="og:locale" content="tr_TR">
-  <meta property="og:title" content="Gizlilik Politikası ve Aydınlatma Metni (KVKK) | Dipnot App">
-  <meta property="og:description" content="Dipnot Gizlilik Politikası ve Aydınlatma Metni (KVKK).">
-  <meta property="og:url" content="https://dipnot.app/gizlilik-politikasi.html">
-  <meta property="og:image" content="https://dipnot.app/android-chrome-512x512.png">
-
-  <title>Gizlilik Politikası ve Aydınlatma Metni (KVKK) | Dipnot App</title>
-  <!-- Bulma CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" integrity="sha384-DCY3M8xLkMu6c9IKcKbe+jHKMjelnwC0p+SBaxfHxoBYZWdJF2X400UdBCgATtAB" crossorigin="anonymous">
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha384-PPIZEGYM1v8zp5Py7UjFb79S58UeqCL9pYVnVPURKEqvioPROaVAJKKLzvH2rDnI" crossorigin="anonymous">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./css/styles.css?v=260417_1">
-
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-</head>
-<body>
-
-  <!-- NAVIGATION -->
-  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-    <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item has-text-weight-bold" href="/">
-          <img src="./img/logos/logo.svg" alt="Dipnot">
-          Dipnot
-        </a>
-
-        <div class="buttons" style="margin-left: auto">
-          <div class="navbar-item is-hidden-desktop">
-            <button
-            id="theme-toggle-mobile"
-            class="button is-text"
-            aria-label="Tema Değiştir"
-            style="text-decoration: none;"
-            >
-              <span class="icon">
-                <i class="fa-solid fa-moon"></i>
-              </span>
-            </button>
-          </div>
-          
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-      </div>
-
-      <div id="navbar" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="/">Ana Sayfa</a>
-          <a class="navbar-item" href="/#about">Dipnot Nedir?</a>
-          <a class="navbar-item" href="/#features">Özellikler</a>
-          <a class="navbar-item" href="/#how-it-works">Nasıl Çalışır?</a>
-          <a class="navbar-item" href="/#faq">S.S.S.</a>
-          <a class="navbar-item" href="/#contact">İletişim</a>
-        </div>
-
-        <div class="navbar-end">
-          <div class="navbar-item is-hidden-touch">
-            <button
-              id="theme-toggle"
-              class="button is-text"
-              aria-label="Tema Değiştir"
-              style="text-decoration: none;"
-            >
-              <span class="icon">
-                <i class="fa-solid fa-moon"></i>
-              </span>
-            </button>
-          </div>
-          <div class="navbar-item">
-            <div class="buttons are-small">
-              <a class="button is-light is-inverted is-outlined is-rounded">
-                <img src="/img/svg/google-play.svg" alt="Google Play">
-                <span class="ml-2">Google Play</span>
-              </a>
-              <a class="button is-light is-rounded">
-                <img src="/img/svg/app-store.svg" alt="App Store">
-                <span class="ml-2">App Store</span>
-              </a>
-            </div>
-          </div>
-        </div>
+---
+layout: base.njk
+lang: tr
+title: "Gizlilik Politikası ve Aydınlatma Metni (KVKK) | Dipnot App"
+description: "Dipnot Gizlilik Politikası ve Aydınlatma Metni (KVKK). Kişisel verilerinizin nasıl işlendiğine dair bilgiler."
+keywords: "dipnot, gizlilik, kvkk, aydınlatma metni, kişisel veri"
+hreflang:
+  - lang: tr
+    href: "https://dipnot.app/gizlilik-politikasi.html"
+  - lang: en
+    href: "https://dipnot.app/privacy-policy.html"
+og:
+  locale: tr_TR
+  localeAlternate: en_US
+  url: "https://dipnot.app/gizlilik-politikasi.html"
+  description: "Dipnot Gizlilik Politikası ve Aydınlatma Metni (KVKK)."
+---
+<!-- HERO BANNER -->
+<section class="hero has-background-hero">
+  <div class="hero-body">
+    <div class="columns">
+      <div class="column">
+        <p class="title is-size-1 has-text-white mb-5">Gizlilik Politikası ve <span class="has-text-primary">Aydınlatma Metni</span> <span style="white-space: nowrap;">(KVKK)</span></p>
       </div>
     </div>
-  </nav>
+  </div>
+</section>
 
-  <!-- HERO BANNER -->
-  <section class="hero has-background-hero">
-    <div class="hero-body">
-      <div class="columns">
-        <div class="column">
-          <p class="title is-size-1 has-text-white mb-5">Gizlilik Politikası ve <span class="has-text-primary">Aydınlatma Metni</span> <span style="white-space: nowrap;">(KVKK)</span></p>
-        </div>
-      </div>
+<!-- MAIN PAGE -->
+<main class="container py-6">
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="content">
+      <h1>Gizlilik Politikası ve Aydınlatma Metni (KVKK)</h1>
+      <p><strong>Son Güncelleme:</strong> <time datetime="2026-04-17">17 Nisan 2026</time></p>
+
+      <h2>1. Veri Sorumlusu ve Temsilcisi</h2>
+      <p>6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca, kişisel verileriniz "Dipnot" uygulamasını yöneten ekip tarafından veri sorumlusu sıfatıyla aşağıda açıklanan kapsamda işlenecektir.</p>
+      <ul>
+        <li>Veri Sorumlusu: Dipnot Uygulama Ekibi</li>
+        <li>İletişim E-postası: help@dipnot.app</li>
+      </ul>
+
+      <h2>2. Toplanan Kişisel Veriler, İşleme Amaçları ve Hukuki Sebepler</h2>
+      <p>Dipnot uygulamasına kaydolduğunuzda ve uygulamayı kullandığınızda aşağıdaki verileriniz işlenmektedir:</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Veri Kategorisi</th>
+            <th>Toplanan Veriler</th>
+            <th>İşleme Amacı</th>
+            <th>Hukuki Sebep (KVKK md. 5)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Kimlik Bilgisi</th>
+            <td>Ad, Soyad</td>
+            <td>Hesap oluşturma, kullanıcıları tanımlama, profilleri kişiselleştirme</td>
+            <td>Açık rıza</td>
+          </tr>
+          <tr>
+            <th>İletişim Bilgisi</th>
+            <td>E-posta adresi, Telefon numarası</td>
+            <td>Hesap doğrulama (e-posta doğrulama), şifre yenileme, bildirim gönderme, kullanıcı ile iletişim</td>
+            <td>Açık rıza</td>
+          </tr>
+          <tr>
+            <th>Kullanım Verileri</th>
+            <td>Okunan makaleler, beğeniler, kaydedilen içerikler, oturum süreleri</td>
+            <td>İçerik önerileri sunma, deneyimi iyileştirme, trend analizi</td>
+            <td>Meşru menfaat</td>
+          </tr>
+          <tr>
+            <th>Teknik Veriler</th>
+            <td>Cihaz modeli, işletim sistemi sürümü, IP adresi, uygulama sürümü</td>
+            <td>Uygulamanın çalışmasını sağlama, hata ayıklama, güvenlik</td>
+            <td>Meşru menfaat</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>3. Verilerin Aktarıldığı Üçüncü Taraflar ve Yurt Dışına Aktarım</h2>
+      <p>Toplanan kişisel verileriniz, aşağıdaki hizmet sağlayıcılarla sınırlı olmak üzere üçüncü taraflarla paylaşılabilir:</p>
+      <ul>
+        <li>
+          <strong>Google Firebase ve Google Cloud Platform (eur3 – Avrupa):</strong>
+          <br>
+          <span>Kimlik doğrulama, veritabanı (Firestore), dosya depolama (Storage) ve push bildirimleri için. Verileriniz Avrupa'daki sunucularda (Frankfurt, eur3) barındırılmaktadır.</span>
+        </li>
+        <li>
+          <strong>Expo (Expo Application Services, Inc. – ABD):</strong>
+          <br>
+          <span>Dipnot mobil uygulaması Expo / React Native altyapısıyla geliştirilmiştir. Push bildirim tokenlarınız Expo Push servisi üzerinden işlenir ve bildirim gönderiminde kullanılır. Uygulama kararlılığını ölçmek ve hata ayıklamak amacıyla sınırlı cihaz ve çalışma zamanı bilgileri (cihaz modeli, işletim sistemi sürümü, uygulama sürümü) Expo'nun ABD'deki sunucularına iletilebilir. Bu aktarım KVKK'nın 9. maddesi kapsamında açık rızanıza dayanılarak gerçekleştirilir.</span>
+        </li>
+        <li>
+          <strong>Google Analytics (Firebase için Google Analytics):</strong>
+          <br>
+          <span>Mobil uygulamadaki kullanım istatistiklerini analiz etmek, kullanıcı davranışlarını anlamak ve deneyimi iyileştirmek amacıyla. Toplanan veriler arasında cihaz tanımlayıcıları, oturum süreleri, ekran görüntülemeleri ve uygulama içi etkileşim olayları yer alır. Bu verileri pazarlama veya üçüncü taraf reklam ağlarıyla paylaşmıyoruz.</span>
+        </li>
+      </ul>
+      <p>Yurt dışına aktarım söz konusu olduğunda, KVKK'nın 9. maddesi uyarınca yeterli korumanın bulunduğu ülkelere (örneğin, AB ülkeleri) veya veri sorumlusunun yeterli korumayı yazılı olarak taahhüt ettiği hizmet sağlayıcılara aktarım yapılmaktadır. ABD'de yerleşik sağlayıcılara (Expo dahil) yapılan aktarımlar, açık rızanız alınarak veya KVKK md. 9 uyarınca gerekli güvenceler sağlanarak yapılır.</p>
+
+      <h2>4. Veri Toplama Yöntemi ve Hukuki Sebep</h2>
+      <p>Kişisel verileriniz, Dipnot uygulamasına kayıt formu doldurulduğunda, uygulama içi etkileşimler sırasında ve teknik verilerin otomatik olarak toplanması yoluyla elde edilmektedir. Veri işleme faaliyetlerimiz, KVKK'nın 5. maddesinde belirtilen aşağıdaki hukuki sebeplere dayanır:</p>
+      <ul>
+        <li>Açık rıza (kimlik ve iletişim bilgileri için)</li>
+        <li>Meşru menfaat (kullanım ve teknik verilerin analiz edilmesi)</li>
+      </ul>
+
+      <h2>5. Veri Saklama Süresi</h2>
+      <p>Kişisel verileriniz, işleme amaçlarının gerektirdiği süre boyunca saklanır. Bu süre, hesabınızın aktif olduğu süredir. Hesabınızı sildiğinizde veya silinmesini talep ettiğinizde, verileriniz en geç 30 gün içinde anonim hale getirilir veya silinir. Yasal yükümlülükler gereği (örneğin, ticari iletişim kayıtları) saklanması gereken veriler, ilgili mevzuatta belirtilen süreler boyunca muhafaza edilir.</p>
+
+      <h2>6. Veri Sahibinin Hakları (KVKK md. 11)</h2>
+      <p>KVKK'nın 11. maddesi uyarınca aşağıdaki haklara sahipsiniz:</p>
+      <ul>
+        <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+        <li>İşlenmişse buna ilişkin bilgi talep etme</li>
+        <li>İşleme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme</li>
+        <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme</li>
+        <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme</li>
+        <li>KVKK'nın 7. maddesinde öngörülen şartlar çerçevesinde silinmesini veya yok edilmesini isteme</li>
+        <li>Aktarılan üçüncü kişilere yukarıdaki düzeltme ve silme işlemlerinin bildirilmesini talep etme</li>
+        <li>İşlenen verilerin münhasıran otomatik sistemlerle analiz edilmesi nedeniyle aleyhinize bir sonucun ortaya çıkması durumunda buna itiraz etme</li>
+        <li>Kanuna aykırı işleme nedeniyle zarara uğramanız hâlinde zararın giderilmesini talep etme</li>
+      </ul>
+      <p>Bu haklarınızı kullanmak için help@dipnot.app adresine kimlik tespiti sağlayacak bilgilerle başvuruda bulunabilirsiniz. Başvurularınız en kısa sürede (en geç 30 gün içinde) ücretsiz olarak cevaplandırılacaktır.</p>
+
+      <h2>7. Reklam ve Pazarlama E-postaları</h2>
+      <p>Şu an için Dipnot, herhangi bir reklam ağı (AdMob vb.) kullanmamaktadır. Gelecekte, ürün güncellemeleri, yeni özellikler veya özel teklifler hakkında bilgilendirme e-postası göndermek istememiz durumunda, size ayrıca açık rıza sorulacaktır. Bu rızayı kayıt sırasında veya ayarlar ekranından verebilir, istediğiniz zaman geri alabilirsiniz.</p>
+
+      <h2>8. Çocuklara İlişkin Veriler</h2>
+      <p>Dipnot, 18 yaşından küçük bireylerin kişisel verilerini bilerek veya kasıtlı olarak toplamaz. Ebeveyn kontrolü olmadan çocukların uygulamayı kullanması önerilmez.</p>
+
+      <h2>9. Değişiklikler</h2>
+      <p>Bu Gizlilik Politikası gerektiğinde güncellenebilir. Önemli değişiklikler uygulama içi bildirim veya e-posta yoluyla duyurulacaktır. Değişikliklerin yürürlüğe girmesinin ardından uygulamayı kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
     </div>
   </section>
 
-  <!-- MAIN PAGE -->
-  <main class="container py-6">
-
-    <!-- CONTENT -->
-    <section class="section">
-      <div class="content">
-        <h1>Gizlilik Politikası ve Aydınlatma Metni (KVKK)</h1>
-        <p><strong>Son Güncelleme:</strong> <time datetime="2026-04-17">17 Nisan 2026</time></p>
-
-        <h2>1. Veri Sorumlusu ve Temsilcisi</h2>
-        <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) uyarınca, kişisel verileriniz “Dipnot” uygulamasını yöneten ekip tarafından veri sorumlusu sıfatıyla aşağıda açıklanan kapsamda işlenecektir.</p>
-        <ul>
-          <li>Veri Sorumlusu: Dipnot Uygulama Ekibi</li>
-          <li>İletişim E-postası: help@dipnot.app</li>
-        </ul>
-
-        <h2>2. Toplanan Kişisel Veriler, İşleme Amaçları ve Hukuki Sebepler</h2>
-        <p>Dipnot uygulamasına kaydolduğunuzda ve uygulamayı kullandığınızda aşağıdaki verileriniz işlenmektedir:</p>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Veri Kategorisi</th>
-              <th>Toplanan Veriler</th>
-              <th>İşleme Amacı</th>
-              <th>Hukuki Sebep (KVKK md. 5)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>Kimlik Bilgisi</th>
-              <td>Ad, Soyad</td>
-              <td>Hesap oluşturma, kullanıcıları tanımlama, profilleri kişiselleştirme</td>
-              <td>Açık rıza</td>
-            </tr>
-            <tr>
-              <th>İletişim Bilgisi</th>
-              <td>E-posta adresi, Telefon numarası</td>
-              <td>Hesap doğrulama (e-posta doğrulama), şifre yenileme, bildirim gönderme, kullanıcı ile iletişim</td>
-              <td>Açık rıza</td>
-            </tr>
-            <tr>
-              <th>Kullanım Verileri</th>
-              <td>Okunan makaleler, beğeniler, kaydedilen içerikler, oturum süreleri</td>
-              <td>İçerik önerileri sunma, deneyimi iyileştirme, trend analizi</td>
-              <td>Meşru menfaat</td>
-            </tr>
-            <tr>
-              <th>Teknik Veriler</th>
-              <td>Cihaz modeli, işletim sistemi sürümü, IP adresi, uygulama sürümü</td>
-              <td>Uygulamanın çalışmasını sağlama, hata ayıklama, güvenlik</td>
-              <td>Meşru menfaat</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2>3. Verilerin Aktarıldığı Üçüncü Taraflar ve Yurt Dışına Aktarım</h2>
-        <p>Toplanan kişisel verileriniz, aşağıdaki hizmet sağlayıcılarla sınırlı olmak üzere üçüncü taraflarla paylaşılabilir:</p>
-        <ul>
-          <li>
-            <strong>Google Firebase ve Google Cloud Platform (eur3 – Avrupa):</strong>
-            <br>
-            <span>Kimlik doğrulama, veritabanı (Firestore), dosya depolama (Storage) ve push bildirimleri için. Verileriniz Avrupa'daki sunucularda (Frankfurt, eur3) barındırılmaktadır.</span>
-          </li>
-          <li>
-            <strong>Expo (Expo Application Services, Inc. – ABD):</strong>
-            <br>
-            <span>Dipnot mobil uygulaması Expo / React Native altyapısıyla geliştirilmiştir. Push bildirim tokenlarınız Expo Push servisi üzerinden işlenir ve bildirim gönderiminde kullanılır. Uygulama kararlılığını ölçmek ve hata ayıklamak amacıyla sınırlı cihaz ve çalışma zamanı bilgileri (cihaz modeli, işletim sistemi sürümü, uygulama sürümü) Expo'nun ABD'deki sunucularına iletilebilir. Bu aktarım KVKK'nın 9. maddesi kapsamında açık rızanıza dayanılarak gerçekleştirilir.</span>
-          </li>
-          <li>
-            <strong>Google Analytics (Firebase için Google Analytics):</strong>
-            <br>
-            <span>Mobil uygulamadaki kullanım istatistiklerini analiz etmek, kullanıcı davranışlarını anlamak ve deneyimi iyileştirmek amacıyla. Toplanan veriler arasında cihaz tanımlayıcıları, oturum süreleri, ekran görüntülemeleri ve uygulama içi etkileşim olayları yer alır. Bu verileri pazarlama veya üçüncü taraf reklam ağlarıyla paylaşmıyoruz.</span>
-          </li>
-        </ul>
-        <p>Yurt dışına aktarım söz konusu olduğunda, KVKK'nın 9. maddesi uyarınca yeterli korumanın bulunduğu ülkelere (örneğin, AB ülkeleri) veya veri sorumlusunun yeterli korumayı yazılı olarak taahhüt ettiği hizmet sağlayıcılara aktarım yapılmaktadır. ABD'de yerleşik sağlayıcılara (Expo dahil) yapılan aktarımlar, açık rızanız alınarak veya KVKK md. 9 uyarınca gerekli güvenceler sağlanarak yapılır.</p>
-
-        <h2>4. Veri Toplama Yöntemi ve Hukuki Sebep</h2>
-        <p>Kişisel verileriniz, Dipnot uygulamasına kayıt formu doldurulduğunda, uygulama içi etkileşimler sırasında ve teknik verilerin otomatik olarak toplanması yoluyla elde edilmektedir. Veri işleme faaliyetlerimiz, KVKK'nın 5. maddesinde belirtilen aşağıdaki hukuki sebeplere dayanır:</p>
-        <ul>
-          <li>Açık rıza (kimlik ve iletişim bilgileri için)</li>
-          <li>Meşru menfaat (kullanım ve teknik verilerin analiz edilmesi)</li>
-        </ul>
-
-        <h2>5. Veri Saklama Süresi</h2>
-        <p>Kişisel verileriniz, işleme amaçlarının gerektirdiği süre boyunca saklanır. Bu süre, hesabınızın aktif olduğu süredir. Hesabınızı sildiğinizde veya silinmesini talep ettiğinizde, verileriniz en geç 30 gün içinde anonim hale getirilir veya silinir. Yasal yükümlülükler gereği (örneğin, ticari iletişim kayıtları) saklanması gereken veriler, ilgili mevzuatta belirtilen süreler boyunca muhafaza edilir.</p>
-
-        <h2>6. Veri Sahibinin Hakları (KVKK md. 11)</h2>
-        <p>KVKK'nın 11. maddesi uyarınca aşağıdaki haklara sahipsiniz:</p>
-        <ul>
-          <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme
-          <li>İşlenmişse buna ilişkin bilgi talep etme</li>
-          <li>İşleme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme</li>
-          <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme</li>
-          <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme</li>
-          <li>KVKK'nın 7. maddesinde öngörülen şartlar çerçevesinde silinmesini veya yok edilmesini isteme</li>
-          <li>Aktarılan üçüncü kişilere yukarıdaki düzeltme ve silme işlemlerinin bildirilmesini talep etme</li>
-          <li>İşlenen verilerin münhasıran otomatik sistemlerle analiz edilmesi nedeniyle aleyhinize bir sonucun ortaya çıkması durumunda buna itiraz etme</li>
-          <li>Kanuna aykırı işleme nedeniyle zarara uğramanız hâlinde zararın giderilmesini talep etme</li>
-        </ul>
-        <p>Bu haklarınızı kullanmak için help@dipnot.app adresine kimlik tespiti sağlayacak bilgilerle başvuruda bulunabilirsiniz. Başvurularınız en kısa sürede (en geç 30 gün içinde) ücretsiz olarak cevaplandırılacaktır.</p>
-
-        <h2>7. Reklam ve Pazarlama E-postaları</h2>
-        <p>Şu an için Dipnot, herhangi bir reklam ağı (AdMob vb.) kullanmamaktadır. Gelecekte, ürün güncellemeleri, yeni özellikler veya özel teklifler hakkında bilgilendirme e-postası göndermek istememiz durumunda, size ayrıca açık rıza sorulacaktır. Bu rızayı kayıt sırasında veya ayarlar ekranından verebilir, istediğiniz zaman geri alabilirsiniz.</p>
-
-        <h2>8. Çocuklara İlişkin Veriler</h2>
-        <p>Dipnot, 18 yaşından küçük bireylerin kişisel verilerini bilerek veya kasıtlı olarak toplamaz. Ebeveyn kontrolü olmadan çocukların uygulamayı kullanması önerilmez.</p>
-
-        <h2>9. Değişiklikler</h2>
-        <p>Bu Gizlilik Politikası gerektiğinde güncellenebilir. Önemli değişiklikler uygulama içi bildirim veya e-posta yoluyla duyurulacaktır. Değişikliklerin yürürlüğe girmesinin ardından uygulamayı kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer mt-6">
-    <div class="container">
-      <div class="columns">
-        <div class="column mb-6">
-          <div class="level">
-            <div class="level-left">
-              <div class="level-item">
-                <figure class="image is-48x48">
-                  <img class="is-rounded" src="./img/logos/logo.svg" alt="Dipnot">
-                </figure>
-              </div>
-
-              <div class="level-item">
-                <h4 class="title">Dipnot</h4>
-              </div>
-            </div>
-          </div>
-
-          <p>Dalış dünyasına dair paylaşımlar için bizi sosyal ağlarda takip edin:</p>
-          <div class="buttons are-large mt-5">
-            <a href="https://www.instagram.com/dipnot.app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Instagram">
-              <span class="icon is-small">
-                <i class="fa-brands fa-instagram"></i>
-              </span>
-            </a>
-
-            <!-- TODO: add social media link -->
-            <a href="https://www.instagram.com/dipnot.app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Facebook">
-              <span class="icon is-small">
-                <i class="fa-brands fa-facebook"></i>
-              </span>
-            </a>
-            
-            <!-- TODO: add social media link -->
-            <a href="https://www.instagram.com/dipnot.app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="X">
-              <span class="icon is-small">
-                <i class="fa-brands fa-x-twitter"></i>
-              </span>
-            </a>
-
-            <a href="https://www.linkedin.com/company/dipnotapp" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Linkedin">
-              <span class="icon is-small">
-                <i class="fa-brands fa-linkedin"></i>
-              </span>
-            </a>
-
-            <a href="https://theorg.com/org/dipnot-1" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="The Org">
-              <span class="icon is-small">
-                <i class="fa-solid fa-sitemap"></i>
-              </span>
-            </a>
-
-            <a href="https://stackshare.io/nevcanuludas/dipnot-app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Stack Share">
-              <span class="icon is-small">
-                <i class="fa-solid fa-share-nodes"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-
-        <div class="column mb-6">
-          <aside class="menu">
-            <p class="menu-label">Site Haritası</p>
-            <ul class="menu-list">
-              <li><a href="#" style="background-color: transparent;">Ana Sayfa</a></li>
-              <li><a href="#about" style="background-color: transparent;">Dipnot Nedir?</a></li>
-              <li><a href="#features" style="background-color: transparent;">Özellikler</a></li>
-              <li><a href="#how-it-works" style="background-color: transparent;">Nasıl Çalışır?</a></li>
-              <li><a href="#faq" style="background-color: transparent;">S.S.S.</a></li>
-              <li><a href="#contact" style="background-color: transparent;">İletişim</a></li>
-            </ul>
-          </aside>
-        </div>
-
-        <!-- Newsletter -->
-        <div class="column mb-6">
-          <aside class="menu pr-5">
-            <p class="menu-label">Bülten Aboneliği</p>
-
-            <form id="newsletter-form">
-              <div class="field">
-                <div class="control has-icons-left">
-                  <input
-                    class="input"
-                    type="email"
-                    id="newsletter-email"
-                    placeholder="E-posta adresiniz"
-                    required
-                  />
-                  <span class="icon is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </div>
-              </div>
-
-              <div class="field">
-                <button class="button is-primary is-fullwidth" type="submit">
-                  Abone Ol
-                </button>
-              </div>
-
-              <p id="newsletter-message" class="help"></p>
-            </form>
-          </aside>
-
-          <aside class="menu pr-5 mt-6">
-            <p class="menu-label">Uygulamayı indir</p>
-
-            <div class="buttons are-small">
-              <button class="button is-light is-inverted is-outlined is-rounded">
-                <img src="/img/svg/google-play.svg" alt="Google Play">
-                <span class="ml-2">Google Play</span>
-              </button>
-              <button class="button is-light is-rounded">
-                <img src="/img/svg/app-store.svg" alt="App Store">
-                <span class="ml-2">App Store</span>
-              </button>
-            </div>
-          </aside>
-        </div>
-
-        <div class="column mb-6">
-          <aside class="menu">
-            <p class="menu-label">İletişim</p>
-          
-            <address class="mb-4">1. Kısım Mah. Vali Recep Yazıcıoğlu Cad. Doğa Parkı Evleri BC Blok No:15/13 Bahçeşehir, İstanbul, Türkiye.</address>
-
-            <p class="has-text-weight-semibold mt-4">Genel İletişim:</p>
-            <p>
-              <span class="icon mr-2">
-                <i class="fa-solid fa-envelope"></i>
-              </span>
-              <a href="mailto:info@dipnot.app">info@dipnot.app</a>
-            </p>
-
-            <p class="has-text-weight-semibold mt-4">Teknik Destek:</p>
-            <p>
-              <span class="icon mr-2">
-                <i class="fa-solid fa-life-ring"></i>
-              </span>
-              <a href="mailto:help@dipnot.app">help@dipnot.app</a>
-            </p>
-
-          </aside>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="columns mt-6">
-        <div class="column has-text-centered">
-          Copyright &copy; 2025&ndash;2026 <span class="mx-4">|</span> <a href="/gizlilik-politikasi.html">Gizlilik Politikası</a> <span class="mx-4">|</span> <a href="/kullanim-kosullari.html">Kullanım Koşulları</a>
-          <br>
-          Website <a href="https://vacstudio.com/" target="_blank" rel="noopener noreferrer">V.A.C. Studio</a> tarafından geliştirilmiştir.
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="./js/main.js?v=251227_1"></script>
-  <script src="./js/newsletter.js?v=251229_1"></script>
-
-</body>
-</html>
+</main>

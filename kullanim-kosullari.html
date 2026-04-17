@@ -1,379 +1,117 @@
-<!DOCTYPE html>
-<html lang="tr" class="has-navbar-fixed-top">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Nevcan Uludaş">
-  <meta name="description" content="Dipnot Kullanım Koşulları — uygulama kullanımı, kullanıcı yükümlülükleri ve yasal şartlar.">
-  <meta name="keywords" content="dipnot, kullanım koşulları, kullanıcı şartları">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=(), payment=()">
-  <meta name="theme-color" content="#338596">
-  <link rel="alternate" hreflang="tr" href="https://dipnot.app/kullanim-kosullari.html">
-  <link rel="alternate" hreflang="en" href="https://dipnot.app/terms-of-use.html">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Dipnot">
-  <meta property="og:locale" content="tr_TR">
-  <meta property="og:title" content="Kullanım Koşulları | Dipnot App">
-  <meta property="og:description" content="Dipnot Kullanım Koşulları — uygulama kullanımı, kullanıcı yükümlülükleri ve yasal şartlar.">
-  <meta property="og:url" content="https://dipnot.app/kullanim-kosullari.html">
-  <meta property="og:image" content="https://dipnot.app/android-chrome-512x512.png">
-
-  <title>Kullanım Koşulları | Dipnot App</title>
-  <!-- Bulma CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" integrity="sha384-DCY3M8xLkMu6c9IKcKbe+jHKMjelnwC0p+SBaxfHxoBYZWdJF2X400UdBCgATtAB" crossorigin="anonymous">
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha384-PPIZEGYM1v8zp5Py7UjFb79S58UeqCL9pYVnVPURKEqvioPROaVAJKKLzvH2rDnI" crossorigin="anonymous">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./css/styles.css?v=260417_1">
-
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-</head>
-<body>
-
-  <!-- NAVIGATION -->
-  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-    <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item has-text-weight-bold" href="/">
-          <img src="./img/logos/logo.svg" alt="Dipnot">
-          Dipnot
-        </a>
-
-        <div class="buttons" style="margin-left: auto">
-          <div class="navbar-item is-hidden-desktop">
-            <button
-            id="theme-toggle-mobile"
-            class="button is-text"
-            aria-label="Tema Değiştir"
-            style="text-decoration: none;"
-            >
-              <span class="icon">
-                <i class="fa-solid fa-moon"></i>
-              </span>
-            </button>
-          </div>
-          
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-      </div>
-
-      <div id="navbar" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="/">Ana Sayfa</a>
-          <a class="navbar-item" href="/#about">Dipnot Nedir?</a>
-          <a class="navbar-item" href="/#features">Özellikler</a>
-          <a class="navbar-item" href="/#how-it-works">Nasıl Çalışır?</a>
-          <a class="navbar-item" href="/#faq">S.S.S.</a>
-          <a class="navbar-item" href="/#contact">İletişim</a>
-        </div>
-
-        <div class="navbar-end">
-          <div class="navbar-item is-hidden-touch">
-            <button
-              id="theme-toggle"
-              class="button is-text"
-              aria-label="Tema Değiştir"
-              style="text-decoration: none;"
-            >
-              <span class="icon">
-                <i class="fa-solid fa-moon"></i>
-              </span>
-            </button>
-          </div>
-          <div class="navbar-item">
-            <div class="buttons are-small">
-              <a class="button is-light is-inverted is-outlined is-rounded">
-                <img src="/img/svg/google-play.svg" alt="Google Play">
-                <span class="ml-2">Google Play</span>
-              </a>
-              <a class="button is-light is-rounded">
-                <img src="/img/svg/app-store.svg" alt="App Store">
-                <span class="ml-2">App Store</span>
-              </a>
-            </div>
-          </div>
-        </div>
+---
+layout: base.njk
+lang: tr
+title: "Kullanım Koşulları | Dipnot App"
+description: "Dipnot Kullanım Koşulları — uygulama kullanımı, kullanıcı yükümlülükleri ve yasal şartlar."
+keywords: "dipnot, kullanım koşulları, kullanıcı şartları"
+hreflang:
+  - lang: tr
+    href: "https://dipnot.app/kullanim-kosullari.html"
+  - lang: en
+    href: "https://dipnot.app/terms-of-use.html"
+og:
+  locale: tr_TR
+  localeAlternate: en_US
+  url: "https://dipnot.app/kullanim-kosullari.html"
+---
+<!-- HERO BANNER -->
+<section class="hero has-background-hero">
+  <div class="hero-body">
+    <div class="columns">
+      <div class="column">
+        <p class="title is-size-1 has-text-white mb-5">Kullanım <span class="has-text-primary">Koşulları</span></p>
       </div>
     </div>
-  </nav>
+  </div>
+</section>
 
-  <!-- HERO BANNER -->
-  <section class="hero has-background-hero">
-    <div class="hero-body">
-      <div class="columns">
-        <div class="column">
-          <p class="title is-size-1 has-text-white mb-5">Kullanım <span class="has-text-primary">Koşulları</span></p>
-        </div>
-      </div>
+<!-- MAIN PAGE -->
+<main class="container py-6">
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="content">
+      <h1>Kullanım Koşulları</h1>
+      <p><strong>Son Güncelleme:</strong> <time datetime="2026-04-06">6 Nisan 2026</time></p>
+
+      <h2>1. Hükümlerin Kabulü</h2>
+      <p>Dipnot mobil uygulamasını ("Uygulama") indirerek, yükleyerek veya herhangi bir şekilde kullanarak, işbu Kullanım Koşulları'nı ("Koşullar") eksiksiz ve koşulsuz olarak kabul etmiş olursunuz. Koşulları kabul etmiyorsanız lütfen uygulamayı kullanmayın.</p>
+
+      <h2>2. Hizmetin Tanımı</h2>
+      <p>Dipnot, Türkiye Cumhuriyeti sınırları içerisinde faaliyet gösteren, scuba dalışı alanında makale, haber, rehber ve video içeriklerinin yayınlandığı bir mobil platformdur. Kullanıcılar ücretsiz olarak içerikleri okuyabilir, kaydedebilir ve kişiselleştirilmiş bir deneyim elde edebilir.</p>
+
+      <h2>3. Hesap Oluşturma ve Güvenlik</h2>
+      <p>Uygulamanın tam işlevselliğinden yararlanmak için bir hesap oluşturmanız ve doğru, güncel ve eksiksiz bilgiler (ad, soyad, e-posta, telefon) vermeniz gerekmektedir.</p>
+      <ul>
+        <li>E-posta doğrulaması zorunludur. Doğrulanmamış hesaplar sınırlı erişime sahip olabilir veya belirli bir süre sonra silinebilir.</li>
+        <li>Hesap şifrenizin gizliliğinden ve hesabınız altında gerçekleştirilen tüm faaliyetlerden yalnızca siz sorumlusunuz. Şifrenizi üçüncü kişilerle paylaşmayın.</li>
+        <li>Hesabınızın izinsiz kullanıldığını fark ederseniz derhal help@dipnot.app adresine bildirin.</li>
+      </ul>
+
+      <h2>4. Kullanıcı Yükümlülükleri</h2>
+      <p>Uygulamayı kullanırken aşağıdaki eylemler kesinlikle yasaktır:</p>
+      <ul>
+        <li>Uygulamanın veya sunucularının işleyişine zarar verecek, aşırı yük bindirecek veya güvenlik açıklarından yararlanacak faaliyetlerde bulunmak.</li>
+        <li>Yasadışı, tehdit edici, taciz edici, nefret söylemi içeren, şiddeti teşvik eden veya başkalarının haklarını (fikri mülkiyet, gizlilik vb.) ihlal eden içerikler paylaşmak (yorumlar, profil bilgileri).</li>
+        <li>Başka bir kullanıcının hesabına izinsiz erişmeye çalışmak, parola veya güvenlik tokenlarını çalmak.</li>
+        <li>Uygulamayı tersine mühendislik yöntemiyle incelemek, kaynak kodunu çıkarmak veya kopyalamak.</li>
+        <li>Uygulama üzerinden spam, phishing veya zararlı yazılım yaymak.</li>
+      </ul>
+      <p>Bu yükümlülükleri ihlal ettiğiniz takdirde Dipnot, hesabınızı geçici veya kalıcı olarak askıya alma veya silme hakkını saklı tutar.</p>
+
+      <h2>5. Fikri Mülkiyet Hakları</h2>
+      <ul>
+        <li>Dipnot uygulamasının tüm içeriği (makaleler, görseller, videolar, logolar, grafikler, yazılım kodu, tasarım) aksi belirtilmedikçe Dipnot'a veya lisans sağlayıcılarına aittir ve uluslararası telif hakkı, marka ve fikri mülkiyet yasalarıyla korunmaktadır.</li>
+        <li>İçerikleri kişisel, ticari olmayan kullanımınız için görüntüleyebilir ve kaydedebilirsiniz. <strong>Ancak izinsiz olarak kopyalayamaz, dağıtamaz, yeniden yayınlayamaz, satamaz veya ticari amaçla kullanamazsınız.</strong></li>
+        <li>"Dipnot" adı ve logosu tescilli marka adayıdır. Kullanımı için yazılı izin gereklidir.</li>
+      </ul>
+
+      <h2>6. Kullanıcı Tarafından Oluşturulan İçerik (UGC)</h2>
+      <p>Uygulamanın ileriki sürümlerinde (örneğin yorum veya topluluk bölümü) içerik paylaşımına izin verilmesi durumunda:</p>
+      <ul>
+        <li>Paylaştığınız içeriklerin telif hakları size ait olmaya devam eder; ancak Dipnot'a bu içerikleri uygulama içinde sınırsız süreyle kullanma, çoğaltma, dağıtma ve işleme hakkını verirsiniz.</li>
+        <li>Paylaştığınız içeriklerden yasal olarak siz sorumlusunuz. Dipnot, uygunsuz içerikleri yayından kaldırma hakkını saklı tutar.</li>
+      </ul>
+
+      <h2>7. Hizmetin Değiştirilmesi ve Sonlandırılması</h2>
+      <p>Dipnot, herhangi bir zamanda, önceden bildirimde bulunarak veya bulunmaksızın:</p>
+      <ul>
+        <li>Uygulamanın tamamını veya bir kısmını geçici veya kalıcı olarak durdurabilir veya değiştirebilir.</li>
+        <li>Belirli özelliklere erişimi kısıtlayabilir.</li>
+        <li>Hesabınızı, Koşulları ihlal ettiğiniz takdirde askıya alabilir veya silebilir.</li>
+      </ul>
+      <p>Uygulamanın durdurulması veya hesabınızın silinmesi durumunda, Dipnot size herhangi bir tazminat ödemekle yükümlü değildir.</p>
+
+      <h2>8. Sorumluluğun Sınırlandırılması</h2>
+      <ul>
+        <li>Dipnot, uygulamanın kesintisiz, hatasız, güvenli veya virüssüz olacağını garanti etmez. Uygulama "olduğu gibi" ve "erişilebilir olduğu kadarıyla" sunulmaktadır.</li>
+        <li>Uygulamanın kullanımından veya kullanılamamasından doğabilecek doğrudan, dolaylı, arızi, özel veya sonuç olarak ortaya çıkan hiçbir zarardan (kâr kaybı, veri kaybı, itibar zararı vb.) Dipnot sorumlu tutulamaz.</li>
+        <li>Yürürlükteki yasanın zorunlu kıldığı durumlar hariç, Dipnot'un toplam sorumluluğu, son 12 ayda uygulama için ödediğiniz ücretleri (eğer varsa) aşmaz. Dipnot ücretsiz bir uygulama olduğu için sorumluluk 0 (sıfır) TL olarak kabul edilir.</li>
+      </ul>
+
+      <h2>9. Üçüncü Taraf Bağlantılar ve Hizmetler</h2>
+      <p>Uygulama, WordPress gibi üçüncü taraf web sitelerine bağlantılar içerebilir. Bu sitelerin gizlilik uygulamalarından veya içeriklerinden Dipnot sorumlu değildir. Bağlantılara tıklamak tamamen kendi sorumluluğunuzdadır.</p>
+
+      <h2>10. Koşullarda Değişiklik</h2>
+      <p>Dipnot, bu Koşulları herhangi bir zamanda değiştirme hakkını saklı tutar. Önemli değişiklikler şu yollarla duyurulacaktır:</p>
+      <ul>
+        <li>Uygulama içi bildirim (en az 7 gün önceden)</li>
+        <li>Kayıtlı e-posta adresinize gönderilen bildirim</li>
+      </ul>
+      <p>Değişikliklerin yürürlüğe girmesinden sonra uygulamayı kullanmaya devam etmeniz, yeni Koşulları kabul ettiğiniz anlamına gelir.</p>
+
+      <h2>11. Uygulanacak Hukuk ve Yetki</h2>
+      <p>İşbu Koşullar, Türkiye Cumhuriyeti kanunlarına tabidir. Koşullardan doğan veya bunlarla ilgili her türlü uyuşmazlıkta, İstanbul (Çağlayan) Mahkemeleri ve İcra Daireleri yetkilidir.</p>
+
+      <h2>12. İletişim</h2>
+      <p>Bu Koşullar veya uygulama hakkında sorularınız, şikayetleriniz veya önerileriniz için bize şu adresten ulaşabilirsiniz:</p>
+      <p>
+        <span class="icon mr-2">
+          <i class="fa-solid fa-envelope"></i>
+        </span>
+        <a href="mailto:help@dipnot.app">help@dipnot.app</a>
+      </p>
     </div>
   </section>
 
-  <!-- MAIN PAGE -->
-  <main class="container py-6">
-
-    <!-- CONTENT -->
-    <section class="section">
-      <div class="content">
-        <h1>Kullanım Koşulları</h1>
-        <p><strong>Son Güncelleme:</strong> <time datetime="2026-04-06">6 Nisan 2026</time></p>
-
-        <h2>1. Hükümlerin Kabulü</h2>
-        <p>Dipnot mobil uygulamasını (“Uygulama”) indirerek, yükleyerek veya herhangi bir şekilde kullanarak, işbu Kullanım Koşulları’nı (“Koşullar”) eksiksiz ve koşulsuz olarak kabul etmiş olursunuz. Koşulları kabul etmiyorsanız lütfen uygulamayı kullanmayın.</p>
-
-        <h2>2. Hizmetin Tanımı</h2>
-        <p>Dipnot, Türkiye Cumhuriyeti sınırları içerisinde faaliyet gösteren, scuba dalışı alanında makale, haber, rehber ve video içeriklerinin yayınlandığı bir mobil platformdur. Kullanıcılar ücretsiz olarak içerikleri okuyabilir, kaydedebilir ve kişiselleştirilmiş bir deneyim elde edebilir.</p>
-
-        <h2>3. Hesap Oluşturma ve Güvenlik</h2>
-        <p>Uygulamanın tam işlevselliğinden yararlanmak için bir hesap oluşturmanız ve doğru, güncel ve eksiksiz bilgiler (ad, soyad, e-posta, telefon) vermeniz gerekmektedir.</p>
-        <ul>
-          <li>E-posta doğrulaması zorunludur. Doğrulanmamış hesaplar sınırlı erişime sahip olabilir veya belirli bir süre sonra silinebilir.</li>
-          <li>Hesap şifrenizin gizliliğinden ve hesabınız altında gerçekleştirilen tüm faaliyetlerden yalnızca siz sorumlusunuz. Şifrenizi üçüncü kişilerle paylaşmayın.</li>
-          <li>Hesabınızın izinsiz kullanıldığını fark ederseniz derhal help@dipnot.app adresine bildirin.</li>
-        </ul>
-
-        <h2>4. Kullanıcı Yükümlülükleri</h2>
-        <p>Uygulamayı kullanırken aşağıdaki eylemler kesinlikle yasaktır:</p>
-        <ul>
-          <li>Uygulamanın veya sunucularının işleyişine zarar verecek, aşırı yük bindirecek veya güvenlik açıklarından yararlanacak faaliyetlerde bulunmak.</li>
-          <li>Yasadışı, tehdit edici, taciz edici, nefret söylemi içeren, şiddeti teşvik eden veya başkalarının haklarını (fikri mülkiyet, gizlilik vb.) ihlal eden içerikler paylaşmak (yorumlar, profil bilgileri).</li>
-          <li>Başka bir kullanıcının hesabına izinsiz erişmeye çalışmak, parola veya güvenlik tokenlarını çalmak.</li>
-          <li>Uygulamayı tersine mühendislik yöntemiyle incelemek, kaynak kodunu çıkarmak veya kopyalamak.</li>
-          <li>Uygulama üzerinden spam, phishing veya zararlı yazılım yaymak.</li>
-        </ul>
-        <p>Bu yükümlülükleri ihlal ettiğiniz takdirde Dipnot, hesabınızı geçici veya kalıcı olarak askıya alma veya silme hakkını saklı tutar.</p>
-
-        <h2>5. Fikri Mülkiyet Hakları</h2>
-        <ul>
-          <li>Dipnot uygulamasının tüm içeriği (makaleler, görseller, videolar, logolar, grafikler, yazılım kodu, tasarım) aksi belirtilmedikçe Dipnot’a veya lisans sağlayıcılarına aittir ve uluslararası telif hakkı, marka ve fikri mülkiyet yasalarıyla korunmaktadır.</li>
-          <li>İçerikleri kişisel, ticari olmayan kullanımınız için görüntüleyebilir ve kaydedebilirsiniz. <strong>Ancak izinsiz olarak kopyalayamaz, dağıtamaz, yeniden yayınlayamaz, satamaz veya ticari amaçla kullanamazsınız.</strong></li>
-          <li>“Dipnot” adı ve logosu tescilli marka adayıdır. Kullanımı için yazılı izin gereklidir.</li>
-        </ul>
-
-        <h2>6. Kullanıcı Tarafından Oluşturulan İçerik (UGC)</h2>
-        <p>Uygulamanın ileriki sürümlerinde (örneğin yorum veya topluluk bölümü) içerik paylaşımına izin verilmesi durumunda:</p>
-        <ul>
-          <li>Paylaştığınız içeriklerin telif hakları size ait olmaya devam eder; ancak Dipnot’a bu içerikleri uygulama içinde sınırsız süreyle kullanma, çoğaltma, dağıtma ve işleme hakkını verirsiniz.</li>
-          <li>Paylaştığınız içeriklerden yasal olarak siz sorumlusunuz. Dipnot, uygunsuz içerikleri yayından kaldırma hakkını saklı tutar.</li>
-        </ul>
-
-        <h2>7. Hizmetin Değiştirilmesi ve Sonlandırılması</h2>
-        <p>Dipnot, herhangi bir zamanda, önceden bildirimde bulunarak veya bulunmaksızın:</p>
-        <ul>
-          <li>Uygulamanın tamamını veya bir kısmını geçici veya kalıcı olarak durdurabilir veya değiştirebilir.</li>
-          <li>Belirli özelliklere erişimi kısıtlayabilir.</li>
-          <li>Hesabınızı, Koşulları ihlal ettiğiniz takdirde askıya alabilir veya silebilir.</li>
-        </ul>
-        <p>Uygulamanın durdurulması veya hesabınızın silinmesi durumunda, Dipnot size herhangi bir tazminat ödemekle yükümlü değildir.</p>
-
-        <h2>8. Sorumluluğun Sınırlandırılması</h2>
-        <ul>
-          <li>Dipnot, uygulamanın kesintisiz, hatasız, güvenli veya virüssüz olacağını garanti etmez. Uygulama “olduğu gibi” ve “erişilebilir olduğu kadarıyla” sunulmaktadır.</li>
-          <li>Uygulamanın kullanımından veya kullanılamamasından doğabilecek doğrudan, dolaylı, arızi, özel veya sonuç olarak ortaya çıkan hiçbir zarardan (kâr kaybı, veri kaybı, itibar zararı vb.) Dipnot sorumlu tutulamaz.</li>
-          <li>Yürürlükteki yasanın zorunlu kıldığı durumlar hariç, Dipnot’un toplam sorumluluğu, son 12 ayda uygulama için ödediğiniz ücretleri (eğer varsa) aşmaz. Dipnot ücretsiz bir uygulama olduğu için sorumluluk 0 (sıfır) TL olarak kabul edilir.</li>
-        </ul>
-
-        <h2>9. Üçüncü Taraf Bağlantılar ve Hizmetler</h2>
-        <p>Uygulama, WordPress gibi üçüncü taraf web sitelerine bağlantılar içerebilir. Bu sitelerin gizlilik uygulamalarından veya içeriklerinden Dipnot sorumlu değildir. Bağlantılara tıklamak tamamen kendi sorumluluğunuzdadır.</p>
-
-        <h2>10. Koşullarda Değişiklik</h2>
-        <p>Dipnot, bu Koşulları herhangi bir zamanda değiştirme hakkını saklı tutar. Önemli değişiklikler şu yollarla duyurulacaktır:</p>
-        <ul>
-          <li>Uygulama içi bildirim (en az 7 gün önceden)</li>
-          <li>Kayıtlı e-posta adresinize gönderilen bildirim</li>
-        </ul>
-        <p>Değişikliklerin yürürlüğe girmesinden sonra uygulamayı kullanmaya devam etmeniz, yeni Koşulları kabul ettiğiniz anlamına gelir.</p>
-
-        <h2>11. Uygulanacak Hukuk ve Yetki</h2>
-        <p>İşbu Koşullar, Türkiye Cumhuriyeti kanunlarına tabidir. Koşullardan doğan veya bunlarla ilgili her türlü uyuşmazlıkta, İstanbul (Çağlayan) Mahkemeleri ve İcra Daireleri yetkilidir.</p>
-
-        <h2>12. İletişim</h2>
-        <p>Bu Koşullar veya uygulama hakkında sorularınız, şikayetleriniz veya önerileriniz için bize şu adresten ulaşabilirsiniz:</p>
-        <p>
-          <span class="icon mr-2">
-            <i class="fa-solid fa-envelope"></i>
-          </span>
-          <a href="mailto:help@dipnot.app">help@dipnot.app</a>
-        </p>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer mt-6">
-    <div class="container">
-      <div class="columns">
-        <div class="column mb-6">
-          <div class="level">
-            <div class="level-left">
-              <div class="level-item">
-                <figure class="image is-48x48">
-                  <img class="is-rounded" src="./img/logos/logo.svg" alt="Dipnot">
-                </figure>
-              </div>
-
-              <div class="level-item">
-                <h4 class="title">Dipnot</h4>
-              </div>
-            </div>
-          </div>
-
-          <p>Dalış dünyasına dair paylaşımlar için bizi sosyal ağlarda takip edin:</p>
-          <div class="buttons are-large mt-5">
-            <a href="https://www.instagram.com/dipnot.app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Instagram">
-              <span class="icon is-small">
-                <i class="fa-brands fa-instagram"></i>
-              </span>
-            </a>
-
-            <!-- TODO: add social media link -->
-            <a href="https://www.instagram.com/dipnot.app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Facebook">
-              <span class="icon is-small">
-                <i class="fa-brands fa-facebook"></i>
-              </span>
-            </a>
-            
-            <!-- TODO: add social media link -->
-            <a href="https://www.instagram.com/dipnot.app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="X">
-              <span class="icon is-small">
-                <i class="fa-brands fa-x-twitter"></i>
-              </span>
-            </a>
-
-            <a href="https://www.linkedin.com/company/dipnotapp" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Linkedin">
-              <span class="icon is-small">
-                <i class="fa-brands fa-linkedin"></i>
-              </span>
-            </a>
-
-            <a href="https://theorg.com/org/dipnot-1" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="The Org">
-              <span class="icon is-small">
-                <i class="fa-solid fa-sitemap"></i>
-              </span>
-            </a>
-
-            <a href="https://stackshare.io/nevcanuludas/dipnot-app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Stack Share">
-              <span class="icon is-small">
-                <i class="fa-solid fa-share-nodes"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-
-        <div class="column mb-6">
-          <aside class="menu">
-            <p class="menu-label">Site Haritası</p>
-            <ul class="menu-list">
-              <li><a href="#" style="background-color: transparent;">Ana Sayfa</a></li>
-              <li><a href="#about" style="background-color: transparent;">Dipnot Nedir?</a></li>
-              <li><a href="#features" style="background-color: transparent;">Özellikler</a></li>
-              <li><a href="#how-it-works" style="background-color: transparent;">Nasıl Çalışır?</a></li>
-              <li><a href="#faq" style="background-color: transparent;">S.S.S.</a></li>
-              <li><a href="#contact" style="background-color: transparent;">İletişim</a></li>
-            </ul>
-          </aside>
-        </div>
-
-        <!-- Newsletter -->
-        <div class="column mb-6">
-          <aside class="menu pr-5">
-            <p class="menu-label">Bülten Aboneliği</p>
-
-            <form id="newsletter-form">
-              <div class="field">
-                <div class="control has-icons-left">
-                  <input
-                    class="input"
-                    type="email"
-                    id="newsletter-email"
-                    placeholder="E-posta adresiniz"
-                    required
-                  />
-                  <span class="icon is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </div>
-              </div>
-
-              <div class="field">
-                <button class="button is-primary is-fullwidth" type="submit">
-                  Abone Ol
-                </button>
-              </div>
-
-              <p id="newsletter-message" class="help"></p>
-            </form>
-          </aside>
-
-          <aside class="menu pr-5 mt-6">
-            <p class="menu-label">Uygulamayı indir</p>
-
-            <div class="buttons are-small">
-              <button class="button is-light is-inverted is-outlined is-rounded">
-                <img src="/img/svg/google-play.svg" alt="Google Play">
-                <span class="ml-2">Google Play</span>
-              </button>
-              <button class="button is-light is-rounded">
-                <img src="/img/svg/app-store.svg" alt="App Store">
-                <span class="ml-2">App Store</span>
-              </button>
-            </div>
-          </aside>
-        </div>
-
-        <div class="column mb-6">
-          <aside class="menu">
-            <p class="menu-label">İletişim</p>
-          
-            <address class="mb-4">1. Kısım Mah. Vali Recep Yazıcıoğlu Cad. Doğa Parkı Evleri BC Blok No:15/13 Bahçeşehir, İstanbul, Türkiye.</address>
-
-            <p class="has-text-weight-semibold mt-4">Genel İletişim:</p>
-            <p>
-              <span class="icon mr-2">
-                <i class="fa-solid fa-envelope"></i>
-              </span>
-              <a href="mailto:info@dipnot.app">info@dipnot.app</a>
-            </p>
-
-            <p class="has-text-weight-semibold mt-4">Teknik Destek:</p>
-            <p>
-              <span class="icon mr-2">
-                <i class="fa-solid fa-life-ring"></i>
-              </span>
-              <a href="mailto:help@dipnot.app">help@dipnot.app</a>
-            </p>
-
-          </aside>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="columns mt-6">
-        <div class="column has-text-centered">
-          Copyright &copy; 2025&ndash;2026 <span class="mx-4">|</span> <a href="/gizlilik-politikasi.html">Gizlilik Politikası</a> <span class="mx-4">|</span> <a href="/kullanim-kosullari.html">Kullanım Koşulları</a>
-          <br>
-          Website <a href="https://vacstudio.com/" target="_blank" rel="noopener noreferrer">V.A.C. Studio</a> tarafından geliştirilmiştir.
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="./js/main.js?v=251227_1"></script>
-  <script src="./js/newsletter.js?v=251229_1"></script>
-
-</body>
-</html>
+</main>

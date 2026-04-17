@@ -1,384 +1,121 @@
-<!DOCTYPE html>
-<html lang="en" class="has-navbar-fixed-top">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Nevcan Uludaş">
-  <meta name="description" content="Dipnot Terms of Use. English mirror; Turkish version is authoritative.">
-  <meta name="keywords" content="dipnot, terms of use, user terms">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=(), payment=()">
-  <meta name="theme-color" content="#338596">
-  <link rel="alternate" hreflang="tr" href="https://dipnot.app/kullanim-kosullari.html">
-  <link rel="alternate" hreflang="en" href="https://dipnot.app/terms-of-use.html">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Dipnot">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:locale:alternate" content="tr_TR">
-  <meta property="og:title" content="Terms of Use | Dipnot App">
-  <meta property="og:description" content="Dipnot Terms of Use. English mirror; Turkish version is authoritative.">
-  <meta property="og:url" content="https://dipnot.app/terms-of-use.html">
-  <meta property="og:image" content="https://dipnot.app/android-chrome-512x512.png">
-
-  <title>Terms of Use | Dipnot App</title>
-  <!-- Bulma CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" integrity="sha384-DCY3M8xLkMu6c9IKcKbe+jHKMjelnwC0p+SBaxfHxoBYZWdJF2X400UdBCgATtAB" crossorigin="anonymous">
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha384-PPIZEGYM1v8zp5Py7UjFb79S58UeqCL9pYVnVPURKEqvioPROaVAJKKLzvH2rDnI" crossorigin="anonymous">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./css/styles.css?v=260417_1">
-
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-</head>
-<body>
-
-  <!-- NAVIGATION -->
-  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-    <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item has-text-weight-bold" href="/">
-          <img src="./img/logos/logo.svg" alt="Dipnot">
-          Dipnot
-        </a>
-
-        <div class="buttons" style="margin-left: auto">
-          <div class="navbar-item is-hidden-desktop">
-            <button
-            id="theme-toggle-mobile"
-            class="button is-text"
-            aria-label="Tema Değiştir"
-            style="text-decoration: none;"
-            >
-              <span class="icon">
-                <i class="fa-solid fa-moon"></i>
-              </span>
-            </button>
-          </div>
-
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-      </div>
-
-      <div id="navbar" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="/">Ana Sayfa</a>
-          <a class="navbar-item" href="/#about">Dipnot Nedir?</a>
-          <a class="navbar-item" href="/#features">Özellikler</a>
-          <a class="navbar-item" href="/#how-it-works">Nasıl Çalışır?</a>
-          <a class="navbar-item" href="/#faq">S.S.S.</a>
-          <a class="navbar-item" href="/#contact">İletişim</a>
-        </div>
-
-        <div class="navbar-end">
-          <div class="navbar-item is-hidden-touch">
-            <button
-              id="theme-toggle"
-              class="button is-text"
-              aria-label="Tema Değiştir"
-              style="text-decoration: none;"
-            >
-              <span class="icon">
-                <i class="fa-solid fa-moon"></i>
-              </span>
-            </button>
-          </div>
-          <div class="navbar-item">
-            <div class="buttons are-small">
-              <a class="button is-light is-inverted is-outlined is-rounded">
-                <img src="/img/svg/google-play.svg" alt="Google Play">
-                <span class="ml-2">Google Play</span>
-              </a>
-              <a class="button is-light is-rounded">
-                <img src="/img/svg/app-store.svg" alt="App Store">
-                <span class="ml-2">App Store</span>
-              </a>
-            </div>
-          </div>
-        </div>
+---
+layout: base.njk
+lang: en
+title: "Terms of Use | Dipnot App"
+description: "Dipnot Terms of Use. English mirror; Turkish version is authoritative."
+keywords: "dipnot, terms of use, user terms"
+hreflang:
+  - lang: tr
+    href: "https://dipnot.app/kullanim-kosullari.html"
+  - lang: en
+    href: "https://dipnot.app/terms-of-use.html"
+og:
+  locale: en_US
+  localeAlternate: tr_TR
+  url: "https://dipnot.app/terms-of-use.html"
+---
+<!-- HERO BANNER -->
+<section class="hero has-background-hero">
+  <div class="hero-body">
+    <div class="columns">
+      <div class="column">
+        <p class="title is-size-1 has-text-white mb-5">Terms of <span class="has-text-primary">Use</span></p>
       </div>
     </div>
-  </nav>
+  </div>
+</section>
 
-  <!-- HERO BANNER -->
-  <section class="hero has-background-hero">
-    <div class="hero-body">
-      <div class="columns">
-        <div class="column">
-          <p class="title is-size-1 has-text-white mb-5">Terms of <span class="has-text-primary">Use</span></p>
-        </div>
+<!-- MAIN PAGE -->
+<main class="container py-6">
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="content">
+      <h1>Terms of Use</h1>
+      <p><strong>Last updated:</strong> <time datetime="2026-04-06">6 April 2026</time></p>
+
+      <div class="notification is-warning">
+        <p><strong>Note:</strong> This English version is provided for convenience. The Turkish version, <a href="/kullanim-kosullari.html">Kullanım Koşulları</a>, is authoritative under Turkish law in case of any conflict.</p>
       </div>
+
+      <h2>1. Acceptance of Terms</h2>
+      <p>By downloading, installing, or using the Dipnot mobile application (the "Application") in any way, you fully and unconditionally accept these Terms of Use (the "Terms"). If you do not accept the Terms, please do not use the Application.</p>
+
+      <h2>2. Description of the Service</h2>
+      <p>Dipnot is a mobile platform operating within the territory of the Republic of Turkey that publishes articles, news, guides, and video content in the field of scuba diving. Users can read, save, and obtain a personalised experience with the content free of charge.</p>
+
+      <h2>3. Account Creation and Security</h2>
+      <p>To use the full functionality of the Application, you must create an account and provide accurate, current, and complete information (first name, last name, email, phone).</p>
+      <ul>
+        <li>Email verification is mandatory. Unverified accounts may have limited access or be deleted after a certain period.</li>
+        <li>You are solely responsible for the confidentiality of your account password and for all activities carried out under your account. Do not share your password with third parties.</li>
+        <li>If you notice unauthorised use of your account, notify help@dipnot.app immediately.</li>
+      </ul>
+
+      <h2>4. User Obligations</h2>
+      <p>The following actions are strictly prohibited when using the Application:</p>
+      <ul>
+        <li>Engaging in activities that could damage, overload, or exploit security vulnerabilities in the Application or its servers.</li>
+        <li>Sharing content (comments, profile information) that is unlawful, threatening, harassing, contains hate speech, encourages violence, or infringes the rights of others (intellectual property, privacy, etc.).</li>
+        <li>Attempting to access another user's account without authorisation, or stealing passwords or security tokens.</li>
+        <li>Reverse-engineering the Application, extracting or copying its source code.</li>
+        <li>Distributing spam, phishing, or malware through the Application.</li>
+      </ul>
+      <p>If you breach these obligations, Dipnot reserves the right to suspend or terminate your account temporarily or permanently.</p>
+
+      <h2>5. Intellectual Property Rights</h2>
+      <ul>
+        <li>Unless otherwise stated, all content of the Dipnot application (articles, images, videos, logos, graphics, software code, design) belongs to Dipnot or its licensors and is protected by international copyright, trademark, and intellectual property laws.</li>
+        <li>You may view and save the content for your personal, non-commercial use. <strong>However, you may not copy, distribute, republish, sell, or use it commercially without authorisation.</strong></li>
+        <li>The name "Dipnot" and the logo are a pending registered trademark. Their use requires written permission.</li>
+      </ul>
+
+      <h2>6. User-Generated Content (UGC)</h2>
+      <p>If content sharing is enabled in future versions of the Application (for example, a comments or community section):</p>
+      <ul>
+        <li>The copyright of content you share remains yours; however, you grant Dipnot the right to use, reproduce, distribute, and process that content within the Application for an unlimited period.</li>
+        <li>You are legally responsible for the content you share. Dipnot reserves the right to remove inappropriate content.</li>
+      </ul>
+
+      <h2>7. Modification and Termination of the Service</h2>
+      <p>Dipnot may, at any time, with or without prior notice:</p>
+      <ul>
+        <li>Temporarily or permanently suspend or modify all or part of the Application.</li>
+        <li>Restrict access to specific features.</li>
+        <li>Suspend or terminate your account if you breach these Terms.</li>
+      </ul>
+      <p>Dipnot is not liable to pay any compensation in case the Application is suspended or your account is deleted.</p>
+
+      <h2>8. Limitation of Liability</h2>
+      <ul>
+        <li>Dipnot does not warrant that the Application will be uninterrupted, error-free, secure, or virus-free. The Application is provided "as is" and "as available".</li>
+        <li>Dipnot shall not be held liable for any direct, indirect, incidental, special, or consequential damages (including loss of profit, data loss, reputational damage) that may arise from use or inability to use the Application.</li>
+        <li>Except where required by applicable mandatory law, Dipnot's total liability shall not exceed the fees you paid for the Application in the last 12 months (if any). As Dipnot is a free application, liability is deemed to be zero (0) TRY.</li>
+      </ul>
+
+      <h2>9. Third-Party Links and Services</h2>
+      <p>The Application may contain links to third-party websites such as WordPress. Dipnot is not responsible for the privacy practices or content of those sites. Clicking on such links is entirely at your own risk.</p>
+
+      <h2>10. Changes to the Terms</h2>
+      <p>Dipnot reserves the right to change these Terms at any time. Significant changes will be announced through the following channels:</p>
+      <ul>
+        <li>In-app notification (at least 7 days in advance)</li>
+        <li>Notification sent to your registered email address</li>
+      </ul>
+      <p>Continuing to use the Application after the changes take effect means you accept the new Terms.</p>
+
+      <h2>11. Governing Law and Jurisdiction</h2>
+      <p>These Terms are governed by the laws of the Republic of Turkey. For any dispute arising out of or relating to these Terms, the Courts and Enforcement Offices of Istanbul (Çağlayan) shall have jurisdiction.</p>
+
+      <h2>12. Contact</h2>
+      <p>For any questions, complaints, or suggestions about these Terms or the Application, you can contact us at:</p>
+      <p>
+        <span class="icon mr-2">
+          <i class="fa-solid fa-envelope"></i>
+        </span>
+        <a href="mailto:help@dipnot.app">help@dipnot.app</a>
+      </p>
     </div>
   </section>
 
-  <!-- MAIN PAGE -->
-  <main class="container py-6">
-
-    <!-- CONTENT -->
-    <section class="section">
-      <div class="content">
-        <h1>Terms of Use</h1>
-        <p><strong>Last updated:</strong> <time datetime="2026-04-06">6 April 2026</time></p>
-
-        <div class="notification is-warning">
-          <p><strong>Note:</strong> This English version is provided for convenience. The Turkish version, <a href="/kullanim-kosullari.html">Kullanım Koşulları</a>, is authoritative under Turkish law in case of any conflict.</p>
-        </div>
-
-        <h2>1. Acceptance of Terms</h2>
-        <p>By downloading, installing, or using the Dipnot mobile application (the "Application") in any way, you fully and unconditionally accept these Terms of Use (the "Terms"). If you do not accept the Terms, please do not use the Application.</p>
-
-        <h2>2. Description of the Service</h2>
-        <p>Dipnot is a mobile platform operating within the territory of the Republic of Turkey that publishes articles, news, guides, and video content in the field of scuba diving. Users can read, save, and obtain a personalised experience with the content free of charge.</p>
-
-        <h2>3. Account Creation and Security</h2>
-        <p>To use the full functionality of the Application, you must create an account and provide accurate, current, and complete information (first name, last name, email, phone).</p>
-        <ul>
-          <li>Email verification is mandatory. Unverified accounts may have limited access or be deleted after a certain period.</li>
-          <li>You are solely responsible for the confidentiality of your account password and for all activities carried out under your account. Do not share your password with third parties.</li>
-          <li>If you notice unauthorised use of your account, notify help@dipnot.app immediately.</li>
-        </ul>
-
-        <h2>4. User Obligations</h2>
-        <p>The following actions are strictly prohibited when using the Application:</p>
-        <ul>
-          <li>Engaging in activities that could damage, overload, or exploit security vulnerabilities in the Application or its servers.</li>
-          <li>Sharing content (comments, profile information) that is unlawful, threatening, harassing, contains hate speech, encourages violence, or infringes the rights of others (intellectual property, privacy, etc.).</li>
-          <li>Attempting to access another user's account without authorisation, or stealing passwords or security tokens.</li>
-          <li>Reverse-engineering the Application, extracting or copying its source code.</li>
-          <li>Distributing spam, phishing, or malware through the Application.</li>
-        </ul>
-        <p>If you breach these obligations, Dipnot reserves the right to suspend or terminate your account temporarily or permanently.</p>
-
-        <h2>5. Intellectual Property Rights</h2>
-        <ul>
-          <li>Unless otherwise stated, all content of the Dipnot application (articles, images, videos, logos, graphics, software code, design) belongs to Dipnot or its licensors and is protected by international copyright, trademark, and intellectual property laws.</li>
-          <li>You may view and save the content for your personal, non-commercial use. <strong>However, you may not copy, distribute, republish, sell, or use it commercially without authorisation.</strong></li>
-          <li>The name "Dipnot" and the logo are a pending registered trademark. Their use requires written permission.</li>
-        </ul>
-
-        <h2>6. User-Generated Content (UGC)</h2>
-        <p>If content sharing is enabled in future versions of the Application (for example, a comments or community section):</p>
-        <ul>
-          <li>The copyright of content you share remains yours; however, you grant Dipnot the right to use, reproduce, distribute, and process that content within the Application for an unlimited period.</li>
-          <li>You are legally responsible for the content you share. Dipnot reserves the right to remove inappropriate content.</li>
-        </ul>
-
-        <h2>7. Modification and Termination of the Service</h2>
-        <p>Dipnot may, at any time, with or without prior notice:</p>
-        <ul>
-          <li>Temporarily or permanently suspend or modify all or part of the Application.</li>
-          <li>Restrict access to specific features.</li>
-          <li>Suspend or terminate your account if you breach these Terms.</li>
-        </ul>
-        <p>Dipnot is not liable to pay any compensation in case the Application is suspended or your account is deleted.</p>
-
-        <h2>8. Limitation of Liability</h2>
-        <ul>
-          <li>Dipnot does not warrant that the Application will be uninterrupted, error-free, secure, or virus-free. The Application is provided "as is" and "as available".</li>
-          <li>Dipnot shall not be held liable for any direct, indirect, incidental, special, or consequential damages (including loss of profit, data loss, reputational damage) that may arise from use or inability to use the Application.</li>
-          <li>Except where required by applicable mandatory law, Dipnot's total liability shall not exceed the fees you paid for the Application in the last 12 months (if any). As Dipnot is a free application, liability is deemed to be zero (0) TRY.</li>
-        </ul>
-
-        <h2>9. Third-Party Links and Services</h2>
-        <p>The Application may contain links to third-party websites such as WordPress. Dipnot is not responsible for the privacy practices or content of those sites. Clicking on such links is entirely at your own risk.</p>
-
-        <h2>10. Changes to the Terms</h2>
-        <p>Dipnot reserves the right to change these Terms at any time. Significant changes will be announced through the following channels:</p>
-        <ul>
-          <li>In-app notification (at least 7 days in advance)</li>
-          <li>Notification sent to your registered email address</li>
-        </ul>
-        <p>Continuing to use the Application after the changes take effect means you accept the new Terms.</p>
-
-        <h2>11. Governing Law and Jurisdiction</h2>
-        <p>These Terms are governed by the laws of the Republic of Turkey. For any dispute arising out of or relating to these Terms, the Courts and Enforcement Offices of Istanbul (Çağlayan) shall have jurisdiction.</p>
-
-        <h2>12. Contact</h2>
-        <p>For any questions, complaints, or suggestions about these Terms or the Application, you can contact us at:</p>
-        <p>
-          <span class="icon mr-2">
-            <i class="fa-solid fa-envelope"></i>
-          </span>
-          <a href="mailto:help@dipnot.app">help@dipnot.app</a>
-        </p>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer mt-6">
-    <div class="container">
-      <div class="columns">
-        <div class="column mb-6">
-          <div class="level">
-            <div class="level-left">
-              <div class="level-item">
-                <figure class="image is-48x48">
-                  <img class="is-rounded" src="./img/logos/logo.svg" alt="Dipnot">
-                </figure>
-              </div>
-
-              <div class="level-item">
-                <h4 class="title">Dipnot</h4>
-              </div>
-            </div>
-          </div>
-
-          <p>Dalış dünyasına dair paylaşımlar için bizi sosyal ağlarda takip edin:</p>
-          <div class="buttons are-large mt-5">
-            <a href="https://www.instagram.com/dipnot.app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Instagram">
-              <span class="icon is-small">
-                <i class="fa-brands fa-instagram"></i>
-              </span>
-            </a>
-
-            <!-- TODO: add social media link -->
-            <a href="https://www.instagram.com/dipnot.app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Facebook">
-              <span class="icon is-small">
-                <i class="fa-brands fa-facebook"></i>
-              </span>
-            </a>
-
-            <!-- TODO: add social media link -->
-            <a href="https://www.instagram.com/dipnot.app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="X">
-              <span class="icon is-small">
-                <i class="fa-brands fa-x-twitter"></i>
-              </span>
-            </a>
-
-            <a href="https://www.linkedin.com/company/dipnotapp" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Linkedin">
-              <span class="icon is-small">
-                <i class="fa-brands fa-linkedin"></i>
-              </span>
-            </a>
-
-            <a href="https://theorg.com/org/dipnot-1" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="The Org">
-              <span class="icon is-small">
-                <i class="fa-solid fa-sitemap"></i>
-              </span>
-            </a>
-
-            <a href="https://stackshare.io/nevcanuludas/dipnot-app" target="_blank" rel="noopener noreferrer" class="button is-rounded" title="Stack Share">
-              <span class="icon is-small">
-                <i class="fa-solid fa-share-nodes"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-
-        <div class="column mb-6">
-          <aside class="menu">
-            <p class="menu-label">Site Haritası</p>
-            <ul class="menu-list">
-              <li><a href="#" style="background-color: transparent;">Ana Sayfa</a></li>
-              <li><a href="#about" style="background-color: transparent;">Dipnot Nedir?</a></li>
-              <li><a href="#features" style="background-color: transparent;">Özellikler</a></li>
-              <li><a href="#how-it-works" style="background-color: transparent;">Nasıl Çalışır?</a></li>
-              <li><a href="#faq" style="background-color: transparent;">S.S.S.</a></li>
-              <li><a href="#contact" style="background-color: transparent;">İletişim</a></li>
-            </ul>
-          </aside>
-        </div>
-
-        <!-- Newsletter -->
-        <div class="column mb-6">
-          <aside class="menu pr-5">
-            <p class="menu-label">Bülten Aboneliği</p>
-
-            <form id="newsletter-form">
-              <div class="field">
-                <div class="control has-icons-left">
-                  <input
-                    class="input"
-                    type="email"
-                    id="newsletter-email"
-                    placeholder="E-posta adresiniz"
-                    required
-                  />
-                  <span class="icon is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </div>
-              </div>
-
-              <div class="field">
-                <button class="button is-primary is-fullwidth" type="submit">
-                  Abone Ol
-                </button>
-              </div>
-
-              <p id="newsletter-message" class="help"></p>
-            </form>
-          </aside>
-
-          <aside class="menu pr-5 mt-6">
-            <p class="menu-label">Uygulamayı indir</p>
-
-            <div class="buttons are-small">
-              <button class="button is-light is-inverted is-outlined is-rounded">
-                <img src="/img/svg/google-play.svg" alt="Google Play">
-                <span class="ml-2">Google Play</span>
-              </button>
-              <button class="button is-light is-rounded">
-                <img src="/img/svg/app-store.svg" alt="App Store">
-                <span class="ml-2">App Store</span>
-              </button>
-            </div>
-          </aside>
-        </div>
-
-        <div class="column mb-6">
-          <aside class="menu">
-            <p class="menu-label">İletişim</p>
-
-            <address class="mb-4">1. Kısım Mah. Vali Recep Yazıcıoğlu Cad. Doğa Parkı Evleri BC Blok No:15/13 Bahçeşehir, İstanbul, Türkiye.</address>
-
-            <p class="has-text-weight-semibold mt-4">Genel İletişim:</p>
-            <p>
-              <span class="icon mr-2">
-                <i class="fa-solid fa-envelope"></i>
-              </span>
-              <a href="mailto:info@dipnot.app">info@dipnot.app</a>
-            </p>
-
-            <p class="has-text-weight-semibold mt-4">Teknik Destek:</p>
-            <p>
-              <span class="icon mr-2">
-                <i class="fa-solid fa-life-ring"></i>
-              </span>
-              <a href="mailto:help@dipnot.app">help@dipnot.app</a>
-            </p>
-
-          </aside>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="columns mt-6">
-        <div class="column has-text-centered">
-          Copyright &copy; 2025&ndash;2026 <span class="mx-4">|</span> <a href="/gizlilik-politikasi.html">Gizlilik Politikası</a> <span class="mx-4">|</span> <a href="/kullanim-kosullari.html">Kullanım Koşulları</a>
-          <br>
-          Website <a href="https://vacstudio.com/" target="_blank" rel="noopener noreferrer">V.A.C. Studio</a> tarafından geliştirilmiştir.
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="./js/main.js?v=251227_1"></script>
-  <script src="./js/newsletter.js?v=251229_1"></script>
-
-</body>
-</html>
+</main>

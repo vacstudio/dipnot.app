@@ -1,0 +1,19 @@
+{
+  "title": "Dipnot",
+  "baseUrl": "https://dipnot.app",
+  "cssVersion": "260417_1",
+  "jsVersion": "260417_1",
+  "themeColor": "#338596",
+  "author": "Nevcan Uludaş",
+  "ogImage": "https://dipnot.app/android-chrome-512x512.png",
+  "cdn": {
+    "bulma": {
+      "href": "https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css",
+      "integrity": "sha384-DCY3M8xLkMu6c9IKcKbe+jHKMjelnwC0p+SBaxfHxoBYZWdJF2X400UdBCgATtAB"
+    },
+    "fontAwesome": {
+      "href": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css",
+      "integrity": "sha384-PPIZEGYM1v8zp5Py7UjFb79S58UeqCL9pYVnVPURKEqvioPROaVAJKKLzvH2rDnI"
+    }
+  }
+}

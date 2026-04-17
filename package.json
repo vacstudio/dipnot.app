@@ -1,0 +1,23 @@
+{
+  "name": "www-dipnot-app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Dipnot landing page — static site, built with Eleventy.",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "clean": "rm -rf _site",
+    "check:html": "html-validate \"_site/**/*.html\"",
+    "check:a11y": "pa11y-ci --sitemap http://localhost:8080/sitemap.xml",
+    "check:lighthouse": "lhci autorun",
+    "check:links": "lychee --no-progress _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@lhci/cli": "^0.14.0",
+    "html-validate": "^8.24.0",
+    "http-server": "^14.1.1",
+    "pa11y-ci": "^3.1.0",
+    "wait-on": "^7.2.0"
+  }
+}
