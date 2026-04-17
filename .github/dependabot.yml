@@ -1,0 +1,42 @@
+version: 2
+updates:
+  # Eleventy + CI tools (html-validate, pa11y, Lighthouse, http-server, wait-on).
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Europe/Istanbul"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+    labels:
+      - "dependencies"
+    groups:
+      eleventy:
+        patterns:
+          - "@11ty/*"
+      ci-tools:
+        patterns:
+          - "@lhci/*"
+          - "html-validate"
+          - "pa11y-ci"
+          - "http-server"
+          - "wait-on"
+
+  # GitHub Actions pinned in .github/workflows/ci.yml.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Europe/Istanbul"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "ci"
+    labels:
+      - "dependencies"
+      - "ci"
