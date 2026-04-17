@@ -56,7 +56,9 @@ jobs:
       - name: Broken-link check (lychee)
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --no-progress --offline _site
+          # --base tells lychee how to resolve root-relative paths (/foo → _site/foo).
+          # --offline skips external URL fetches (keeps CI deterministic).
+          args: --no-progress --offline --base _site _site
           fail: false
 
       - name: Upload Pages artifact
