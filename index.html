@@ -8,9 +8,10 @@ og:
   locale: tr_TR
   url: "https://dipnot.app/"
   description: "Dipnot, dalış ve su altı dünyasına ilgi duyanlar için hazırlanmış makale odaklı bir mobil içerik platformudur."
+hasContactForm: true
 ---
 <!-- HERO BANNER -->
-<section class="hero is-fullheight-with-navbar has-background-hero mt-6">
+<section class="hero is-fullheight-with-navbar has-background-hero">
   <div class="hero-body">
     <div class="columns">
       <div class="column is-align-content-center">
@@ -285,9 +286,14 @@ og:
 
             <div class="card-content">
 
-              <!-- TODO: form is not working -->
               <!-- Contact Form -->
-              <form>
+              <form id="contact-form">
+
+                <!-- Honeypot (spam trap — bots fill this, humans don't see it) -->
+                <div class="is-hidden" aria-hidden="true">
+                  <label for="contact-website">Website</label>
+                  <input id="contact-website" name="website" type="text" tabindex="-1" autocomplete="off">
+                </div>
 
                 <!-- Name -->
                 <div class="field">
@@ -354,6 +360,9 @@ og:
                     </button>
                   </div>
                 </div>
+
+                <!-- Feedback (success/error) -->
+                <p id="contact-feedback" class="help mt-3" role="status" aria-live="polite"></p>
 
               </form>
               <!-- /Contact Form -->
