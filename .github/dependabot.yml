@@ -3,6 +3,7 @@ updates:
   # Eleventy + CI tools (html-validate, pa11y, Lighthouse, http-server, wait-on).
   - package-ecosystem: "npm"
     directory: "/"
+    target-branch: "dev"
     schedule:
       interval: "weekly"
       day: "monday"
@@ -29,6 +30,7 @@ updates:
   # GitHub Actions pinned in .github/workflows/ci.yml.
   - package-ecosystem: "github-actions"
     directory: "/"
+    target-branch: "dev"
     schedule:
       interval: "weekly"
       day: "monday"
