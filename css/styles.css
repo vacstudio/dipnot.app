@@ -3,6 +3,12 @@
   --color-primary: #04d1b2;
 }
 
+body,
+h1, h2, h3, h4, h5, h6,
+.title, .subtitle {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
 .navbar.is-fixed-top {
   box-shadow: 0 0 10px black;
 }
