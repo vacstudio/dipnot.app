@@ -8,6 +8,18 @@ terse — the commit message and PR body carry the full reasoning.
 
 ## 2026-04-21
 
+- **Privacy policy** — Mirrored the Expo (Push + OTA Updates) and
+  Google Analytics US-servers additions from
+  [`core_docs/data-processors.md`](../core_docs/data-processors.md)
+  into [`gizlilik-politikasi.html`](gizlilik-politikasi.html) (TR,
+  authoritative) and [`privacy-policy.html`](privacy-policy.html) (EN
+  mirror). Expo entry now covers OTA launch-time pings to
+  `u.expo.dev` (app install ID, runtime version, update channel)
+  alongside push tokens + stability metadata. GA entry gained a
+  closing sentence disclosing USA processing (no user-configurable
+  region on standard Firebase projects). Bumped `Son Güncelleme` /
+  `Last updated` to 2026-04-21. Contributes to epic
+  [#30](https://github.com/Dipnot-App/www.dipnot.app/issues/30).
 - **HTML quality** — Cleared every error surfaced by
   `npm run check:html` (30 → 0). Root causes: Nunjucks `{% if %}`
   conditional meta tags leaving trailing whitespace when a frontmatter
