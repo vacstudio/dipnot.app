@@ -8,6 +8,15 @@ terse — the commit message and PR body carry the full reasoning.
 
 ## 2026-04-21
 
+- **HTML quality** — Cleared every error surfaced by
+  `npm run check:html` (30 → 0). Root causes: Nunjucks `{% if %}`
+  conditional meta tags leaving trailing whitespace when a frontmatter
+  key was unset (base.njk); Bulma's legacy `<a role="button"
+  class="navbar-burger">` (nav.njk → swapped to `<button>`);
+  `<th>` cells missing `scope` attributes in the KVKK personal-data
+  processor tables (gizlilik-politikasi.html + privacy-policy.html).
+  Contributes to epic [#32](https://github.com/Dipnot-App/www.dipnot.app/issues/32).
+  Landed via [PR #60](https://github.com/Dipnot-App/www.dipnot.app/pull/60).
 - **Typography** — Added `.text-caption` (12 px), `.text-small` (14 px),
   and `.text-lead` (18 px) helper classes in [`css/styles.css`](css/styles.css)
   for the canonical type-scale tokens Bulma doesn't cover (Bulma jumps
@@ -15,6 +24,10 @@ terse — the commit message and PR body carry the full reasoning.
   `core_docs/communication/to-landing.md` (2026-04-19). Spec:
   [`core_docs/product-design/typography.md`](../core_docs/product-design/typography.md).
   Closes [#52](https://github.com/Dipnot-App/www.dipnot.app/issues/52).
+  Landed via [PR #58](https://github.com/Dipnot-App/www.dipnot.app/pull/58).
+- **Repo hygiene** — Added `.DS_Store` + `**/.DS_Store` to
+  [`.gitignore`](.gitignore). Landed via
+  [PR #57](https://github.com/Dipnot-App/www.dipnot.app/pull/57).
 
 ## 2026-04-19
 
