@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="{{ site.author }}">
   <meta name="description" content="{{ description }}">
-  {% if keywords %}<meta name="keywords" content="{{ keywords }}">{% endif %}
+  {%- if keywords %}
+  <meta name="keywords" content="{{ keywords }}">
+  {%- endif %}
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=(), payment=()">
   <meta name="theme-color" content="{{ site.themeColor }}">
-  {% if robots %}<meta name="robots" content="{{ robots }}">{% endif %}
+  {%- if robots %}
+  <meta name="robots" content="{{ robots }}">
+  {%- endif %}
   {%- for alt in hreflang %}
   <link rel="alternate" hreflang="{{ alt.lang }}" href="{{ alt.href }}">
   {%- endfor %}
@@ -19,7 +23,9 @@
   <meta property="og:type" content="{{ og.type or 'website' }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:locale" content="{{ og.locale or 'tr_TR' }}">
-  {% if og.localeAlternate %}<meta property="og:locale:alternate" content="{{ og.localeAlternate }}">{% endif %}
+  {%- if og.localeAlternate %}
+  <meta property="og:locale:alternate" content="{{ og.localeAlternate }}">
+  {%- endif %}
   <meta property="og:title" content="{{ og.title or title }}">
   <meta property="og:description" content="{{ og.description or description }}">
   <meta property="og:url" content="{{ og.url }}">
