@@ -8,6 +8,21 @@ terse — the commit message and PR body carry the full reasoning.
 
 ## 2026-04-21
 
+- **Brand assets** — Audited every brand-logo reference against the
+  [asset-naming rule](../core_docs/product-design/logo.md#naming-rule)
+  ratified in `core_docs` on 2026-04-20. Result: **0 renames needed.**
+  [`img/logos/`](img/logos/) already carries all 9 master filenames
+  (6 solo + 3 composed) as both SVG and PNG exports, matching
+  [`core_docs/assets/logo/`](../core_docs/assets/logo/). All
+  references in code ([`_includes/partials/nav.njk`](_includes/partials/nav.njk),
+  [`_includes/partials/footer.njk`](_includes/partials/footer.njk),
+  [`brand-book.html`](brand-book.html)) already use the master names
+  (`logo.svg`, `logo-gold.svg`, `logo-white-on-teal.svg`,
+  `logo-white-on-sky-captain.svg`). Favicon set at repo root
+  (`favicon.ico`, `favicon-16x16.png`, `favicon-32x32.png`,
+  `apple-touch-icon.png`, `android-chrome-192x192.png`,
+  `android-chrome-512x512.png`) keeps its platform-standard filenames
+  per the rule's exception clause.
 - **Privacy policy** — Mirrored the Expo (Push + OTA Updates) and
   Google Analytics US-servers additions from
   [`core_docs/data-processors.md`](../core_docs/data-processors.md)
