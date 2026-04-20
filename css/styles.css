@@ -9,6 +9,11 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Inter", system-ui, -apple-system, sans-serif;
 }
 
+/* Type-scale helpers for tokens Bulma doesn't cover (caption 12 / small 14 / lead 18) */
+.text-caption { font-size: 12px; line-height: 1.5; }
+.text-small   { font-size: 14px; line-height: 1.5; }
+.text-lead    { font-size: 18px; line-height: 1.5; }
+
 .navbar.is-fixed-top {
   box-shadow: 0 0 10px black;
 }
