@@ -37,7 +37,6 @@ jobs:
 
       - name: Validate HTML
         run: npm run check:html
-        continue-on-error: true
 
       - name: Serve _site on :8080
         run: npx http-server _site -p 8080 --silent &
