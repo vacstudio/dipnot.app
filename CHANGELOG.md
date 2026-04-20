@@ -8,6 +8,12 @@ terse — the commit message and PR body carry the full reasoning.
 
 ## 2026-04-21
 
+- **CI** — Removed `continue-on-error: true` from the `Validate HTML`
+  step in [`.github/workflows/ci.yml`](.github/workflows/ci.yml) — now
+  a hard gate. Enabled by [PR #60](https://github.com/Dipnot-App/www.dipnot.app/pull/60)
+  clearing all 30 pre-existing errors. Pa11y + Lighthouse remain soft
+  until their own backlogs are cleared (tracked under epic
+  [#32](https://github.com/Dipnot-App/www.dipnot.app/issues/32)).
 - **Brand assets** — Audited every brand-logo reference against the
   [asset-naming rule](../core_docs/product-design/logo.md#naming-rule)
   ratified in `core_docs` on 2026-04-20. Result: **0 renames needed.**
