@@ -8,6 +8,16 @@ terse — the commit message and PR body carry the full reasoning.
 
 ## 2026-04-24
 
+- **Privacy (Phase D)** — Regenerated the Firebase Cloud Functions
+  (contact form) entry in [`gizlilik-politikasi.html`](gizlilik-politikasi.html)
+  and [`privacy-policy.html`](privacy-policy.html) to reflect the
+  `us-central1` → `europe-west1` migration (Belgium, EU). Dropped the
+  KVKK art. 9 cross-border framing from the contact-form snippet —
+  processing is now inside EU/EEA, matching the `eur3` Firebase entry
+  pattern. Snippets pulled verbatim from the registry at
+  [`core_docs/data-processors.md`](../core_docs/data-processors.md).
+  Bumped `Son Güncelleme` / `Last updated` to 2026-04-24 in both
+  files. Closes the `core_docs` 2026-04-21 Phase D ask.
 - **Issue infra** — Provisioned the status axis (`status:triage`,
   `status:blocked`, `status:wontfix`, `status:good-first-issue`) by
   renaming the bare `blocked` label to `status:blocked` and adding
