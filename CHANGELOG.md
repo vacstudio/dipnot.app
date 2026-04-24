@@ -8,6 +8,12 @@ terse — the commit message and PR body carry the full reasoning.
 
 ## 2026-04-24
 
+- **Design** — Equal-height cards in `#features` and `#how-it-works`
+  on [`index.html`](index.html). Bulma columns stretch to row height
+  by default, but `.card` stays at content height — so varying text
+  lengths produced uneven card rows. Added a small rule in
+  [`css/styles.css`](css/styles.css) making each card `flex: 1`
+  inside its flex column. Bumped `cssVersion` for cache-bust.
 - **Privacy (Phase D)** — Regenerated the Firebase Cloud Functions
   (contact form) entry in [`gizlilik-politikasi.html`](gizlilik-politikasi.html)
   and [`privacy-policy.html`](privacy-policy.html) to reflect the
