@@ -1,0 +1,14 @@
+_site
+node_modules
+package-lock.json
+
+# Local per-machine Claude Code settings (globally gitignored).
+.claude/
+
+# Nunjucks templates — Prettier has no built-in parser; leave to manual formatting.
+*.njk
+
+# XML / plain-text / binary assets Prettier shouldn't touch.
+sitemap.xml
+*.svg
+img/
