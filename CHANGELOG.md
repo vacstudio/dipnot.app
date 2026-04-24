@@ -6,6 +6,24 @@ Format: reverse chronological, one heading per date (`## YYYY-MM-DD`),
 one bullet per change with a PR link when available. Keep entries
 terse — the commit message and PR body carry the full reasoning.
 
+## 2026-04-24
+
+- **Issue infra** — Provisioned the status axis (`status:triage`,
+  `status:blocked`, `status:wontfix`, `status:good-first-issue`) by
+  renaming the bare `blocked` label to `status:blocked` and adding
+  the missing three. Deleted GitHub's 9 default labels (`bug`,
+  `enhancement`, `documentation`, `duplicate`, `good first issue`,
+  `help wanted`, `invalid`, `question`, `wontfix`) per the
+  Replacement policy. Added [`.github/ISSUE_TEMPLATE/bug_report.md`](.github/ISSUE_TEMPLATE/bug_report.md)
+  and [`.github/ISSUE_TEMPLATE/feature_request.md`](.github/ISSUE_TEMPLATE/feature_request.md)
+  with `status:triage` front-matter so new issues auto-tag for triage.
+  Landing's diverged `type:` / `priority:` / `area:` taxonomy
+  (finer-grained than the `core_docs` canonical — `p0..p3` vs.
+  `high/medium/low`, and landing-specific areas `a11y`, `seo`,
+  `privacy`, `ci`, `brand`) is preserved as intentional drift;
+  variance to be formalized in `core_docs/development-rules/issues.md`
+  (ask queued).
+
 ## 2026-04-21
 
 - **CI** — Removed `continue-on-error: true` from the `Validate HTML`
