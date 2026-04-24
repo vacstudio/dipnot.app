@@ -6,6 +6,21 @@ Format: reverse chronological, one heading per date (`## YYYY-MM-DD`),
 one bullet per change with a PR link when available. Keep entries
 terse — the commit message and PR body carry the full reasoning.
 
+## 2026-04-25
+
+- **Tooling** — Added Prettier (`^3.8.3`) plus `format`, `format:check`,
+  and `audit` scripts in [`package.json`](package.json), a minimal
+  [`.prettierrc.json`](.prettierrc.json) (mirrors admin's config minus
+  the Tailwind plugin), and a [`.prettierignore`](.prettierignore)
+  covering `_site/`, `node_modules`, `package-lock.json`, `.claude/`,
+  `*.njk` (Nunjucks — no built-in Prettier parser), `sitemap.xml`,
+  `*.svg`, and `img/`. Closes the first half of the `core_docs`
+  2026-04-24 code-quality-gaps ask (formatter + audit script);
+  Dependabot was already wired via
+  [`.github/dependabot.yml`](.github/dependabot.yml). No repo-wide
+  reformat yet — `format:check` reports 13 pre-existing files; that
+  reformat ships as a separate PR for clean review.
+
 ## 2026-04-24
 
 - **Design** — Equal-height cards in `#features` and `#how-it-works`
