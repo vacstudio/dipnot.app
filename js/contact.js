@@ -35,7 +35,7 @@
       };
 
       const res = await fetch(
-        "https://us-central1-dipnotapp.cloudfunctions.net/submitContactForm",
+        "https://europe-west1-dipnotapp.cloudfunctions.net/submitContactForm",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
