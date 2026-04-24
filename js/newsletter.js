@@ -24,7 +24,7 @@
           body: JSON.stringify({
             email: emailInput.value,
           }),
-        }
+        },
       );
 
       const data = await res.json();

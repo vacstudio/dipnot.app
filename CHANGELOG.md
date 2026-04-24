@@ -20,6 +20,23 @@ terse — the commit message and PR body carry the full reasoning.
   [`.github/dependabot.yml`](.github/dependabot.yml). No repo-wide
   reformat yet — `format:check` reports 13 pre-existing files; that
   reformat ships as a separate PR for clean review.
+- **Formatting** — Repo-wide `prettier --write .` over the 13
+  previously-flagged files (4 HTML pages + 4 legal pages + 3 JS
+  files + `css/styles.css` + `CHANGELOG.md` + `site.webmanifest`).
+  Pure-whitespace + quote-style changes — no semantic diffs, save
+  two incidental fixes Prettier caught: a stray double-semicolon
+  in [`css/styles.css`](css/styles.css) (`rgba(…);;` → `rgba(…);`)
+  and a trailing-newline miss on the same file. Bumped
+  `cssVersion` and `jsVersion` to `260425_1` in
+  [`_data/site.json`](_data/site.json) to cache-bust.
+- **Layout fix** — Stripped the 2-space indent in front of
+  `{{ content | safe }}` in [`_includes/layouts/base.njk`](_includes/layouts/base.njk).
+  Prettier's YAML-frontmatter canonicalization inserts a blank
+  line after the closing `---`, which combined with the old indent
+  produced a rendered line with trailing whitespace (tripped
+  `html-validate`'s `no-trailing-whitespace` rule on every page).
+  Left-aligning the expression eliminates the issue; rendered
+  HTML whitespace is inconsequential.
 
 ## 2026-04-24
 
@@ -94,7 +111,7 @@ terse — the commit message and PR body carry the full reasoning.
   `npm run check:html` (30 → 0). Root causes: Nunjucks `{% if %}`
   conditional meta tags leaving trailing whitespace when a frontmatter
   key was unset (base.njk); Bulma's legacy `<a role="button"
-  class="navbar-burger">` (nav.njk → swapped to `<button>`);
+class="navbar-burger">` (nav.njk → swapped to `<button>`);
   `<th>` cells missing `scope` attributes in the KVKK personal-data
   processor tables (gizlilik-politikasi.html + privacy-policy.html).
   Contributes to epic [#32](https://github.com/Dipnot-App/www.dipnot.app/issues/32).
