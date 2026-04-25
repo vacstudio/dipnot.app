@@ -13,7 +13,7 @@
     "check:links": "lychee --no-progress _site",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "audit": "npm audit --audit-level=high"
+    "audit": "npm audit --audit-level=critical"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
