@@ -18,11 +18,11 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@lhci/cli": "^0.15.0",
-    "html-validate": "^10.13.1",
+    "html-validate": "^10.16.0",
     "http-server": "^14.1.1",
     "pa11y-ci": "^4.1.0",
     "prettier": "^3.8.3",
-    "wait-on": "^9.0.5"
+    "wait-on": "^9.0.6"
   },
   "overrides": {
     "cookie": "^0.7.0"
