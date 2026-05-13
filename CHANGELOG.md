@@ -6,6 +6,21 @@ Format: reverse chronological, one heading per date (`## YYYY-MM-DD`),
 one bullet per change with a PR link when available. Keep entries
 terse — the commit message and PR body carry the full reasoning.
 
+## 2026-05-13
+
+- **Assets** — Moved the six favicon files from the repo root into
+  [`img/icons/`](img/icons/) and updated references in
+  [`_includes/layouts/base.njk`](_includes/layouts/base.njk),
+  [`site.webmanifest`](site.webmanifest), and the `ogImage` URL in
+  [`_data/site.json`](_data/site.json). Dropped the now-unused
+  `*.png` and `*.ico` root passthroughs in
+  [`eleventy.config.js`](eleventy.config.js). Closes
+  [#11](https://github.com/Dipnot-App/www.dipnot.app/issues/11).
+- **Landing** — Added a CSS-only hero entrance animation (rising
+  bubbles, staggered column fade-rise, one-shot "okumaya" glow
+  pulse). Disabled under `prefers-reduced-motion: reduce`.
+  [#80](https://github.com/Dipnot-App/www.dipnot.app/pull/80).
+
 ## 2026-04-25
 
 - **Tooling** — Added Prettier (`^3.8.3`) plus `format`, `format:check`,
