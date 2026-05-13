@@ -5,7 +5,7 @@
   "jsVersion": "260425_1",
   "themeColor": "#338596",
   "author": "Nevcan Uludaş",
-  "ogImage": "https://dipnot.app/img/icons/android-chrome-512x512.png",
+  "ogImage": "https://dipnot.app/img/og/og-default.png",
   "cdn": {
     "bulma": {
       "href": "https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css",

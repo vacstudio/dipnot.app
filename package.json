@@ -5,6 +5,7 @@
   "description": "Dipnot landing page — static site, built with Eleventy.",
   "scripts": {
     "build": "eleventy",
+    "build:og": "node scripts/build-og.js",
     "serve": "eleventy --serve",
     "clean": "rm -rf _site",
     "check:html": "html-validate \"_site/**/*.html\"",
@@ -22,6 +23,7 @@
     "http-server": "^14.1.1",
     "pa11y-ci": "^4.1.0",
     "prettier": "^3.8.3",
+    "sharp": "^0.34.5",
     "wait-on": "^9.0.6"
   },
   "overrides": {
