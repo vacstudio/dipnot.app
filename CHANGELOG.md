@@ -8,6 +8,16 @@ terse — the commit message and PR body carry the full reasoning.
 
 ## 2026-05-13
 
+- **SEO** — Added a proper 1200×630 social-preview master at
+  [`img/og/og-default.png`](img/og/og-default.png) (27 KB, sRGB,
+  white logo centered on Sky Captain `#131B26`). Pointed
+  `_data/site.json` → `ogImage` at the new URL — all six pages
+  pick it up automatically since none override `og.image`. Added
+  [`scripts/build-og.js`](scripts/build-og.js) +
+  [`npm run build:og`](package.json) for re-running when the logo
+  master changes; introduces `sharp` as a devDep. Closes
+  [#72](https://github.com/Dipnot-App/www.dipnot.app/issues/72).
+  Mirror to `core_docs/assets/og/` requested via inbox.
 - **Assets** — Moved the six favicon files from the repo root into
   [`img/icons/`](img/icons/) and updated references in
   [`_includes/layouts/base.njk`](_includes/layouts/base.njk),
