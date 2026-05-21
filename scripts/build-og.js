@@ -48,6 +48,7 @@ async function main() {
         top: Math.round((HEIGHT - logoH) / 2),
       },
     ])
+    .removeAlpha()
     .png({ compressionLevel: 9 })
     .toFile(OUTPUT_PATH);
 
