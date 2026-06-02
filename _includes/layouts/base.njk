@@ -71,5 +71,8 @@
   {%- if hasContactForm %}
   <script src="/js/contact.js?v={{ site.jsVersion }}"></script>
   {%- endif %}
+  {%- if pageModule %}
+  <script type="module" src="/js/{{ pageModule }}?v={{ site.jsVersion }}"></script>
+  {%- endif %}
 </body>
 </html>

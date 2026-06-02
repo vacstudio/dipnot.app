@@ -1,0 +1,140 @@
+---
+layout: base.njk
+lang: tr
+title: "Hesap Silme | Dipnot App"
+description: "Dipnot hesabınızı ve verilerinizi silme talebinde bulunun. Uygulamaya giriş yapmadan, e-posta adresinizle hesap silme talebi oluşturun."
+keywords: "dipnot, hesap silme, hesabımı sil, veri silme, kvkk"
+pageModule: account-deletion.js
+hreflang:
+  - lang: tr
+    href: "https://dipnot.app/hesap-silme.html"
+og:
+  locale: tr_TR
+  url: "https://dipnot.app/hesap-silme.html"
+  description: "Dipnot hesabınızı ve verilerinizi silme talebinde bulunun."
+---
+
+<!-- HERO BANNER -->
+<section class="hero has-background-hero">
+  <div class="hero-body">
+    <div class="columns">
+      <div class="column">
+        <p class="title is-size-1 has-text-white mb-5">
+          Hesap <span class="has-text-primary">Silme</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN PAGE -->
+<main class="container py-6">
+  <section class="section">
+    <div class="content">
+      <h1>Dipnot Hesabınızı Silme</h1>
+      <p>
+        Bu sayfa, <strong>Dipnot</strong> uygulaması (geliştirici:
+        <strong>Dipnot Uygulama Ekibi</strong>) hesabınızı ve ilişkili
+        verilerinizi silmeniz içindir. Uygulamayı kaldırmış veya giriş
+        yapamıyor olsanız bile, aşağıdaki formla
+        <strong>giriş yapmadan</strong> silme talebi oluşturabilirsiniz.
+      </p>
+
+      <h2>Hesap silme talebi nasıl oluşturulur?</h2>
+      <ol>
+        <li>
+          Aşağıdaki forma hesabınıza ait <strong>e-posta adresini</strong>
+          girin (isterseniz silme nedenini ekleyin).
+        </li>
+        <li><strong>"Silme talebi gönder"</strong> düğmesine tıklayın.</li>
+        <li>
+          E-posta adresinize gönderilen <strong>onay bağlantısına</strong>
+          tıklayarak talebinizi doğrulayın. Bu adım, başkasının sizin adınıza
+          talep oluşturmasını önler — talep, siz onaylayana kadar işleme
+          alınmaz.
+        </li>
+      </ol>
+
+      <h2>Uygulamadan silme (mevcut kullanıcılar)</h2>
+      <p>
+        Uygulamaya giriş yapabiliyorsanız hesabınızı doğrudan uygulama içinden
+        de silebilirsiniz:
+      </p>
+      <p>
+        <strong>Ayarlar → "Hesabımı Sil" → "Evet, Sil"</strong>
+      </p>
+      <p>
+        Bu işlem giriş kimliğinizi anında siler; profil verileriniz aşağıda
+        belirtilen saklama süresi içinde tamamen kaldırılır.
+      </p>
+
+      <h2>Hangi veriler silinir, ne kadar süre saklanır?</h2>
+      <p>
+        Talebiniz onaylandıktan sonra hesabınız ve ilişkili kişisel
+        verileriniz — kimlik bilgileriniz (ad, soyad), iletişim bilgileriniz
+        (e-posta, telefon) ve kullanım verileriniz (okunan makaleler,
+        beğeniler, kaydedilen içerikler) dâhil — <strong>30 gün</strong>
+        içinde kalıcı olarak silinir veya anonim hâle getirilir.
+      </p>
+      <p>
+        Yalnızca yasal yükümlülükler gereği saklanması zorunlu olan veriler
+        (örneğin mevzuatın öngördüğü ticari kayıtlar), ilgili mevzuatta
+        belirtilen süreler boyunca muhafaza edilir. Verilerin işlenmesine
+        ilişkin ayrıntılar için
+        <a href="/gizlilik-politikasi.html">Gizlilik Politikası</a>
+        sayfamıza bakabilirsiniz.
+      </p>
+
+      <hr />
+
+      <h2>Hesap silme talebi formu</h2>
+      <p>
+        Tüm veriler, güvenli bağlantı (HTTPS/TLS) üzerinden şifrelenerek
+        iletilir.
+      </p>
+
+      <form id="deletion-form">
+        <div class="field">
+          <label class="label" for="deletion-email">E-posta adresiniz</label>
+          <div class="control has-icons-left">
+            <input
+              class="input"
+              type="email"
+              id="deletion-email"
+              name="email"
+              placeholder="ornek@eposta.com"
+              autocomplete="email"
+              required
+            />
+            <span class="icon is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="deletion-reason">
+            Silme nedeni <span class="has-text-grey">(isteğe bağlı)</span>
+          </label>
+          <div class="control">
+            <textarea
+              class="textarea"
+              id="deletion-reason"
+              name="reason"
+              rows="3"
+              placeholder="Dilerseniz hesabınızı neden sildiğinizi paylaşabilirsiniz."
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="field">
+          <button class="button is-primary" type="submit">
+            Silme talebi gönder
+          </button>
+        </div>
+
+        <p id="deletion-message" class="help mt-3"></p>
+      </form>
+    </div>
+  </section>
+</main>
